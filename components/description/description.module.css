@@ -1,0 +1,34 @@
+.container {
+    min-height:100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.details {
+    background: radial-gradient( 
+        #ffff00 ,
+        #ff0000
+    ) fixed;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: grid;
+    align-items: center;
+    align-content: center;
+    min-height: 450px;
+}
+
+.animation {
+    max-height: 50vh;
+}
+
+@media only screen and (min-width: 768px) {
+    .container {
+        min-height:500px;
+        grid-template-columns: repeat(2, minmax(320px, 1fr));
+    }
+    .animation {
+        max-height: none;
+    }
+    .details {
+        padding: 1rem;
+    }
+  }

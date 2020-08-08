@@ -1,0 +1,28 @@
+.container {
+    padding: 0 0 4rem 0;
+}
+
+.cards {
+    background: #b4cc67;
+    box-shadow: 0 20px 20px 0 rgb(204 56 138 / 10%);
+    border-radius: 10px;
+    display: grid;
+    grid-row-gap: 1rem;
+    align-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(50px, 0fr));
+    grid-column-gap: 2rem;
+    justify-content: space-evenly;
+    padding: 2rem 1rem;
+    margin: 4rem 0 0;
+}
+
+@media only screen and (min-width: 768px) {
+    .cards {
+        grid-template-columns: repeat(auto-fit, minmax(100px, 0fr));
+        padding: 2rem;
+        margin: 4rem 2rem 2rem;
+    }
+    .container {
+        padding: 0 4rem 4rem 4rem;
+    }
+  }

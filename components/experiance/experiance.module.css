@@ -1,0 +1,33 @@
+.cards {
+    display: grid;
+}
+
+.experianceCard {
+    padding: 2rem 0rem;
+    background: radial-gradient( 
+        #ffff00 ,
+        #ff0000
+    ) fixed;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.my-masonry-grid {
+    display: -webkit-box; /* Not needed if autoprefixing */
+    display: -ms-flexbox; /* Not needed if autoprefixing */
+    display: flex;
+    width: auto;
+  }
+  .my-masonry-grid_column {
+    background-clip: padding-box;
+  }
+  
+
+@media only screen and (min-width: 768px) {
+    .experianceCard {
+        padding: 2rem 2rem;
+    }
+    .container {
+        padding: 0 4rem;
+    }
+  }

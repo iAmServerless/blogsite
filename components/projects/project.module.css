@@ -1,0 +1,45 @@
+.cards {
+    display: grid;
+}
+
+.my-masonry-grid {
+    display: -webkit-box; /* Not needed if autoprefixing */
+    display: -ms-flexbox; /* Not needed if autoprefixing */
+    display: flex;
+    width: auto;
+  }
+  .my-masonry-grid_column {
+    background-clip: padding-box;
+  }
+
+.projectImage {
+    width: 100%;
+    filter: blur(2px);
+}
+
+.projectCard {
+    margin: 2rem 0;
+    position: relative;
+}
+
+.buttonStyle {
+    padding: 10px;
+    font-size: 2rem;
+    border: 1px solid #333;
+    backdrop-filter: brightness(20%);
+    background: radial-gradient( 
+        #ffff00 ,
+        #ff0000
+    ) fixed;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@media only screen and (min-width: 768px) {
+    .container {
+        padding: 0 4rem;
+    }
+    .projectCard {
+        margin: 2rem;
+    }
+  }
