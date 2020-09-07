@@ -5,10 +5,12 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "deploy": "pm2 deploy process.json production update"
   },
   "dependencies": {
     "next": "9.4.4",
+    "pm2": "^4.4.1",
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "react-masonry-css": "^1.0.14",
