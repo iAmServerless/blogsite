@@ -1,7 +1,7 @@
 {
     "apps" : [{
        "name" : "Ashutosh website",
-       "script" : "yarn start"
+       "script" : "yarn start -p 8080"
     }],
     "deploy" : {
       "production" : {

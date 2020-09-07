@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
+    "start": "next start -p 8080",
     "deploy": "pm2 deploy process.json production update"
   },
   "dependencies": {
