@@ -3,18 +3,7 @@ import Slider from "react-slick";
 import utilStyles from './../../styles/utils.module.css';
 
   let testimonials = [
-    {
-        name: 'Ashutosh Sharma',
-        designation: 'Technology Lead',
-        image: '/ashutosh.png',
-        desc: 'Ashutosh is really an awsome person and can build anything',
-    },
-    {
-        name: 'Ashutosh Sharma',
-        designation: 'Technology Lead',
-        image: '/ashutosh.png',
-        desc: 'Ashutosh is really an awsome person and can build anything asdfa f asfd asf as fda sfd as dfa fd adfs a fda fd',
-    }
+    
   ]
 
   var settings = {
@@ -37,6 +26,7 @@ function TestimonialCard({testimonial}) {
 }
 
 export default function Testimonials() {
+    if(!testimonials.length) return null;
     return <div className={styles.container}>
         <h1 className={`${utilStyles.heading2Xl} ${utilStyles.underline} ${utilStyles.gradient} ${utilStyles.margin4}`}>Testimonials</h1>
         <div className={styles.cards}>
