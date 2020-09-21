@@ -35,6 +35,7 @@ function BlogDetails({blog}) {
 }
 
 export default function Blogs() {
+    if(!blogs.length) return null;
     return <div className={styles.container}>
         <h1 className={`${utilStyles.heading2Xl} ${utilStyles.underline} ${utilStyles.gradient} ${utilStyles.margin4}`}>Blog Posts</h1>
         <div className={styles.cards}>
