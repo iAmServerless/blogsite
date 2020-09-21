@@ -1,3 +1,6 @@
+.container {
+    content-visibility: auto;
+}
 .cards {
     display: grid;
 }

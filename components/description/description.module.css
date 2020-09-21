@@ -1,6 +1,7 @@
 .container {
     min-height:100vh;
     display: grid;
+    content-visibility: auto;
     grid-template-columns: 1fr;
 }
 .details {

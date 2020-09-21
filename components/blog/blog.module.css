@@ -1,18 +1,33 @@
 .container {
     content-visibility: auto;
 }
+
 .cards {
     display: grid;
 }
 
-.experianceCard {
-    padding: 2rem 0rem;
+.blogCard {
+    padding: 2rem 1rem;
     background: radial-gradient( 
         #ffff00 ,
         #ff0000
     ) fixed;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    border: 1px solid #ffff00;
+    cursor: pointer;
+    margin: 2rem 0;
+}
+
+.clickIndication {
+    text-align: right;
+    color: blue;
+    -webkit-text-fill-color: #dfea57;
+}
+
+.blogCard:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s;
 }
 
 .my-masonry-grid {
@@ -27,8 +42,9 @@
   
 
 @media only screen and (min-width: 768px) {
-    .experianceCard {
+    .blogCard {
         padding: 2rem 2rem;
+        margin: 2rem;
     }
     .container {
         padding: 0 4rem;

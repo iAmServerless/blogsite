@@ -1,4 +1,3 @@
-import styles from './contact.module.css';
 import utilStyles from './../../styles/utils.module.css';
 import { useEffect } from 'react';
 
@@ -18,6 +17,7 @@ export default function Contact() {
         <style jsx>{`
             .container {
                 padding: 0 4rem;
+                content-visibility: auto;
             }
             a,
             .button{
@@ -246,7 +246,7 @@ export default function Contact() {
             }
             
         `}</style>
-        <h1 className={`${utilStyles.heading2Xl} ${utilStyles.underline} ${utilStyles.gradient} ${utilStyles.margin4}`}>Contact Us</h1>
+        <h1 className={`${utilStyles.heading2Xl} ${utilStyles.underline} ${utilStyles.gradient} ${utilStyles.margin4}`}>Contact Details</h1>
         <div className="content">
 	    <div className="contact">
             <div className="other">

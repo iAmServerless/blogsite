@@ -1,5 +1,6 @@
 .container {
     padding: 0 0 4rem 0;
+    content-visibility: auto;
 }
 
 .cards {

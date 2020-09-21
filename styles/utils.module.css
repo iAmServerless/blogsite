@@ -48,7 +48,7 @@
   }
 
   .gradient2 {
-    background: radial-gradient( #ffff00 , #ff0000 ) fixed;
+    background: radial-gradient( #ffff00 , #ff0000 );
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }

@@ -6,6 +6,7 @@ import Skills from '../components/skills';
 import Layout from '../components/layouts/homepage'
 import Testimonials from '../components/testimonials';
 import Contact from '../components/contact';
+import Blogs from '../components/blog';
 
 export default function Home() {
   return (
@@ -21,6 +22,7 @@ export default function Home() {
         <link rel="canonical" href="https://ashu.online/" />
       </Head>
       <Description />
+      <Blogs />
       <Experiance />
       <Skills />
       <Projects />
