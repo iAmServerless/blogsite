@@ -11,12 +11,12 @@ const breakpointColumnsObj = {
   };
 
   let blogs = [
-    /* {
+    {
           title: 'Lighthouse Auditing, things you should know',
           author: 'Ashutosh Sharma',
           description: 'Lighthouse is an awesome tool to quickly find out the performance issues in your web application and list down all the actionable items.',
           url: '/blogs/lighthouse-performance-auditing-things-you-should-know'
-    } */
+    }
   ]
 
 function BlogDetails({blog}) {
