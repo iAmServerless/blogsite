@@ -45,7 +45,7 @@ exec(\`node \${lighthouseCli}
 `
 
 
-export default function Home() {
+export default function Lighthouse() {
     return (
         <div className={`${themeStyles.background} ${themeStyles.textColor} ${styles.removePadding}`}>
             <Head>
