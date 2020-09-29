@@ -63,6 +63,8 @@ export default function Lighthouse() {
                 <meta name="twitter:title" content={title} />
                 <meta name="twitter:description" content={description} />
                 <meta name="twitter:image" content="https://ashu.online/lighthouse.png" />
+                <meta property="og:site_name" content="Ashutosh Sharma Blogs | ashu.online" />
+                <meta name="twitter:image:alt" content="Lighthouse Performance Report" />
                 <title>{title}</title>
                 <meta name="description" content={description} />
                 <meta name="keywords" content="lighthouse auditing, performance scores, lighthouse report, lighthouse limitations cpu, memory issues, lighthouse-ci server, web.dev, improve performance of web application" />
