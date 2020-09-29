@@ -48,8 +48,8 @@ export default function Home() {
     return (
         <div className={`${themeStyles.background} ${themeStyles.textColor} ${styles.removePadding}`}>
             <Head>
-                <meta charset="utf-8" />
-                <meta http-equiv="content-type" content="text/html; charset=utf-8"></meta>
+                <meta charSet="utf-8" />
+                <meta httpEquiv="content-type" content="text/html; charset=utf-8"></meta>
                 <title>Google lighhouse auditing - things you should know before believing the results</title>
                 <meta name="description" content="believing lighthouse results needs lot more understanding about how your reports are generated. Any action you plan based on suggestion from lighthouse report needs through understanding of how it will impact your web application" />
                 <meta name="keywords" content="lighthouse auditing, performance scores, lighthouse report, lighthouse limitations cpu, memory issues, lighthouse-ci server and web.dev" />
@@ -68,13 +68,13 @@ export default function Home() {
                 <P>
                     This article will cover the usage of lighthouse and its strengths and weaknesses. Where to trust it and where to not. Google has eagerly advertised all the benefits of the tools and integrated it in all of its other major tools like search console, page speed insight, and web.dev. This directly or indirectly forces people to improve their score sometime at the cost of something important. I have seen many teams do weird things to see green ticks in their lighthouse report without knowing the exact impact of it on their conversion and usability.
       </P>
-                <P>
+                
                     <ul>
                         <li>
                             <a className={styles.linkNav} href="#issues-to-be-solved">Issues which needs to be solved</a>
                             <ul>
                                 <li><a className={styles.linkNav} href="#cpu-power-issue">CPU power issue</a></li>
-                                <li><a className={styles.linkNav} href="#do-not-understand-application">Lighthouse covers only the most generic issues and does not understand your application behavior</a></li>
+                                <li><a className={styles.linkNav} href="#application-behavior">Lighthouse covers only the most generic issues and does not understand your application behavior</a></li>
                             </ul>
                         </li>
                         <li>
@@ -97,7 +97,6 @@ export default function Home() {
                             <a className={styles.linkNav} href="#conclusion">Conclusion</a>
                         </li>
                     </ul>
-                </P>
                 <h2 id="issues-to-be-solved">Issues which needs to be tackled</h2>
                 <h3 id="cpu-power-issue">A) CPU power issue</h3>
                 <P>
@@ -109,8 +108,8 @@ export default function Home() {
                     The Lighthouse team has done a great job in throttling the CPU to bring computation cycles down to an average of most used devices like MOTO G4 or Nexus 5X.
                     But on a very high-end machine like new fancy MacBook Pro throttling CPU cycles does not drop CPU cycles to the desired level.
                 </P>
+                <h4>For example</h4>
                 <P>
-                    <h4>For example</h4>
                     let a high-end processor like intel i7 can execute 1200 instructions in a sec by throttling it 4x only 300 instructions will get executed. Similarly, a low-end processor like intel i3 can only execute 400 instructions in a sec and by throttling it to 4x only 100 instructions can get executed.
                 </P>
                 <P>
@@ -148,7 +147,7 @@ export default function Home() {
                     You can clearly see the difference in scores  between the two approaches.
                 </P>
 
-                <h3 id="do-not-understand-application">B) Lighthouse covers only the most generic issues and do not understand your application behavior</h3>
+                <h2 key={3} id="application-behavior">B) Lighthouse covers only the most generic issues and do not understand your application behavior</h2>
                 <P>
                     This is the most complex issue which I see with lighthouse reporting. Every application is different and optimizes the available resource where it sees the best fit.
                 </P>
@@ -221,14 +220,12 @@ export default function Home() {
                     I know developers apply all sorts of tricks to improve their lighthouse score. From lazy loading offscreen content (We ourselves did this without measuring its impact but now we have a plan to run experiments around it) to delaying some critical third-party scripts. In most cases, developers do not measure the impact of their change on user experience or the users lost by the marketing team.
                 </P>
                 <h2 id="considering-lighthouse-suggestions">Considering lighthouse suggestions</h2>
-                <P>
-                    Lighthouse performance scores mostly depend upon the three parameters
-                    <ol>
-                        <li><a className={styles.linkNav} href="#intial-render">How fast page rendered (FCP, LCP, Speed Index)</a></li>
-                        <li><a className={styles.linkNav} href="#page-interactivity">Page Interactivity (TBT, TTI)</a></li>
-                        <li><a className={styles.linkNav} href="#stability">Stability (CLS)</a></li>
-                    </ol>
-                </P>
+                <P>Lighthouse performance scores mostly depend upon the three parameters</P>
+                <ol>
+                    <li><a className={styles.linkNav} href="#intial-render">How fast page rendered (FCP, LCP, Speed Index)</a></li>
+                    <li><a className={styles.linkNav} href="#page-interactivity">Page Interactivity (TBT, TTI)</a></li>
+                    <li><a className={styles.linkNav} href="#stability">Stability (CLS)</a></li>
+                </ol>
                 <P>
                     To improve your performance score, the lighthouse report provides tons of suggestions. You need to understand the suggestions and check how feasible they are and how much value those suggestions will bring to your website.
                 </P>
@@ -252,25 +249,23 @@ export default function Home() {
                 <P>
                     But Google took the wrong path here. In the upcoming version, the lighthouse will start suggesting the replacement of larger libraries with their smaller counterparts. There are multiple problems with this approach.
                 </P>
-                <P>
-                    <ol>
-                        <li>
-                            <P>
-                                Most libraries get larger because they solve more corner cases and feature requests. Why do people say webpack is tough because it handles so many edge cases that no other bundler handles. Imagine if webpack did not exist then half of us would have stuck in understanding the different kinds of module systems js supports. Similarly, the popular frontend frameworks are large because they handle too many things, from backward compatibility to more bugs. Jumping to a new library may cause issues like weak documentation, bugs, etc. So if you plan to pick this item get ready to have an expert developer team.
-                            </P>
-                        </li>
-                        <li>
-                            <P>
-                                This is purely my thought but I strongly believe google will not recommend the replacement of highly popular libraries with their smaller counterpart. It is highly unlikely that Google will recommend Preact to react because of the emotional attachment community has with the React framework. Doing this is unprincipled and unfair with the maintainers of projects whose community is not aggressive in nature.
-                            </P>
-                        </li>
-                        <li>
-                            <P>
-                                Google itself does not follow rules created by themselves. Most of the google products load way too much of Javascript. A company which has the best resources around the world has never focused on their lighthouse score but wants the entire world to take it seriously. There seems to be a hidden agenda of google behind this. Faster the web better is the ad revenue of google and lesser is the crawl infra requirement can be some of the benefits.
-                            </P>
-                        </li>
-                    </ol>
-                </P>
+                <ol>
+                    <li>
+                        <P>
+                            Most libraries get larger because they solve more corner cases and feature requests. Why do people say webpack is tough because it handles so many edge cases that no other bundler handles. Imagine if webpack did not exist then half of us would have stuck in understanding the different kinds of module systems js supports. Similarly, the popular frontend frameworks are large because they handle too many things, from backward compatibility to more bugs. Jumping to a new library may cause issues like weak documentation, bugs, etc. So if you plan to pick this item get ready to have an expert developer team.
+                        </P>
+                    </li>
+                    <li>
+                        <P>
+                            This is purely my thought but I strongly believe google will not recommend the replacement of highly popular libraries with their smaller counterpart. It is highly unlikely that Google will recommend Preact to react because of the emotional attachment community has with the React framework. Doing this is unprincipled and unfair with the maintainers of projects whose community is not aggressive in nature.
+                        </P>
+                    </li>
+                    <li>
+                        <P>
+                            Google itself does not follow rules created by themselves. Most of the google products load way too much of Javascript. A company which has the best resources around the world has never focused on their lighthouse score but wants the entire world to take it seriously. There seems to be a hidden agenda of google behind this. Faster the web better is the ad revenue of google and lesser is the crawl infra requirement can be some of the benefits.
+                        </P>
+                    </li>
+                </ol>
                 <P>
                     Before taking any step to reducing javascript on your page like lazy loading off-screen components please calculate its impact on your primary metrics like conversion, user experience, etc.
                 </P>
@@ -293,22 +288,20 @@ export default function Home() {
                 </P>
                 <br />
                 <h2 id="conclusion">Conclusion</h2>
-                <P>
-                    <ol>
-                        <li>Lighthouse is an awesome performance tool built by Google and can help you improve your website performance.</li>
-                        <li>There are multiple issues related to how lighthouse work and the consistency of the results.</li>
-                        <li>Devices with different configurations can give completely different scores so it is important to stick to a single device configuration while running a lighthouse.
+                <ol>
+                    <li>Lighthouse is an awesome performance tool built by Google and can help you improve your website performance.</li>
+                    <li>There are multiple issues related to how lighthouse work and the consistency of the results.</li>
+                    <li>Devices with different configurations can give completely different scores so it is important to stick to a single device configuration while running a lighthouse.
 </li>
-                        <li>The same device can give different scores based on how much CPU is available to the lighthouse process during the test.
+                    <li>The same device can give different scores based on how much CPU is available to the lighthouse process during the test.
 </li>
-                        <li>Using cloud solutions like web.dev is a better solution to get consistent results than running a lighthouse on your local machine.</li>
-                        <li>Running self hoisted service is better than cloud solutions because results in cloud solutions can get inconsistent based on the amount of traffic they are handling. Also, lighthouse settings can be better manipulated in a self-hosted environment.</li>
-                        <li>A self-hosted environment requires expertise and time because of limited resources and documentation but is very scalable and integrates very well with most popular CI providers.</li>
-                        <li>Tracking real user data is the most reliable approach to track web performance. Google web vital or perfume.js is some of the lovely libraries to track real user data.</li>
-                        <li>Define critical metrics to your website like conversion, bounce rate, user experience, etc. Plan any optimization suggestion from the lighthouse after tracking the impact of it on your critical metrics.</li>
-                        <li>Never do premature optimization for the sake of a high lighthouse score. Simple lazy loading of offscreen components to reduce javascript size in some cases can drastically reduce user experience so prefer caution while making such changes.</li>
-                    </ol>
-                </P>
+                    <li>Using cloud solutions like web.dev is a better solution to get consistent results than running a lighthouse on your local machine.</li>
+                    <li>Running self hoisted service is better than cloud solutions because results in cloud solutions can get inconsistent based on the amount of traffic they are handling. Also, lighthouse settings can be better manipulated in a self-hosted environment.</li>
+                    <li>A self-hosted environment requires expertise and time because of limited resources and documentation but is very scalable and integrates very well with most popular CI providers.</li>
+                    <li>Tracking real user data is the most reliable approach to track web performance. Google web vital or perfume.js is some of the lovely libraries to track real user data.</li>
+                    <li>Define critical metrics to your website like conversion, bounce rate, user experience, etc. Plan any optimization suggestion from the lighthouse after tracking the impact of it on your critical metrics.</li>
+                    <li>Never do premature optimization for the sake of a high lighthouse score. Simple lazy loading of offscreen components to reduce javascript size in some cases can drastically reduce user experience so prefer caution while making such changes.</li>
+                </ol>
             </BlogContent>
             <Follow />
         </div>
