@@ -37,9 +37,9 @@ function ExperianceDetails({experiance}) {
     return <div className={styles.experianceCard}>
         <div>
         <div>{experiance.year}</div>
-        <h3 className={utilStyles.headingXl}>{experiance.name}</h3>
-        <h4 className={utilStyles.headingLg}>{experiance.role}</h4>
-        <p className={utilStyles.paragraph}>{experiance.responsibility}</p>
+        <h3 className={`${utilStyles.headingXl} ${utilStyles.gradient2}`}>{experiance.name}</h3>
+        <h4 className={`${utilStyles.headingLg} ${utilStyles.gradient2}`}>{experiance.role}</h4>
+        <p className={`${utilStyles.paragraph} ${utilStyles.gradient2}`}>{experiance.responsibility}</p>
         </div>
     </div>
 }

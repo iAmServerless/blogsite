@@ -24,10 +24,10 @@ function BlogDetails({blog}) {
     <a>
     <div className={styles.blogCard}>
         <div>
-        <h3 className={utilStyles.headingXl}>{blog.title}</h3>
-        <h4 className={utilStyles.headingLg}>{blog.author}</h4>
-        <p className={utilStyles.paragraph}>{blog.description}</p>
-        <div className={styles.clickIndication}>Click to open</div>
+        <h3 className={`${utilStyles.headingXl} ${utilStyles.gradient2}`}>{blog.title}</h3>
+        <h4 className={`${utilStyles.headingLg} ${utilStyles.gradient2}`}>{blog.author}</h4>
+        <p className={`${utilStyles.paragraph} ${utilStyles.gradient2}`}>{blog.description}</p>
+        <div className={`${styles.clickIndication} ${utilStyles.gradient2}`}>Click to open</div>
         </div>
     </div>
     </a>

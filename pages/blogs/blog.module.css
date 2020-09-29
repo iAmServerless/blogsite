@@ -24,9 +24,10 @@
 }
 
 .linkNav:hover {
-    background-color: rgba(255,200,200,0.3);
+    background: radial-gradient( #ffff00 , #ff0000 );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     border-bottom: 1px solid rgba(255,200,200,0.8);
-    color: #fff900;
     font-weight: 400;
 }
 

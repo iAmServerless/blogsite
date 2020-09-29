@@ -36,10 +36,10 @@ export default function Description() {
             <Svg />
         </div>
         <div className={styles.details}>
-            <div>Welcome I'M</div>
-            <h1 className={utilStyles.heading2Xl}>ASHUTOSH SHARMA</h1>
-            <h2 className={utilStyles.headingLg}>Web Developer & Frontend Architect</h2>
-            <p className={utilStyles.paragraph}>I am a performance freak. Lighthouse, web vitals are my source of energy. TLS 1.3, server push, differential loading and CDN caching are my sport. Web assembly and rust are my best friends. Javascript and only Javascript is my Love.</p>
+            <div className={utilStyles.gradient2}>Welcome I'M</div>
+            <h1 className={`${utilStyles.heading2Xl} ${utilStyles.gradient2}`}>ASHUTOSH SHARMA</h1>
+            <h2 className={`${utilStyles.headingLg} ${utilStyles.gradient2}`}>Web Developer & Frontend Architect</h2>
+            <p className={`${utilStyles.paragraph}  ${utilStyles.gradient2}`}>I am a performance freak. Lighthouse, web vitals are my source of energy. TLS 1.3, server push, differential loading and CDN caching are my sport. Web assembly and rust are my best friends. Javascript and only Javascript is my Love.</p>
         </div>
     </div>
 

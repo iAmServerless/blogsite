@@ -2,6 +2,7 @@ import Head from 'next/head'
 import SyntaxHighlighter from 'react-syntax-highlighter';
 import { gruvboxDark as dark } from 'react-syntax-highlighter/dist/cjs/styles/hljs';
 import themeStyles from '../../styles/theme.module.css'
+import utilStyle from './../../styles/utils.module.css'
 import styles from './blog.module.css'
 import BlogTop from '../../components/blogTop'
 import BlogContent from '../../components/blogContent'
@@ -97,8 +98,8 @@ export default function Home() {
                             <a className={styles.linkNav} href="#conclusion">Conclusion</a>
                         </li>
                     </ul>
-                <h2 id="issues-to-be-solved">Issues which needs to be tackled</h2>
-                <h3 id="cpu-power-issue">A) CPU power issue</h3>
+                <h2 className={utilStyle.gradient2} id="issues-to-be-solved" className={utilStyle.gradient2}>Issues which needs to be tackled</h2>
+                <h3 className={utilStyle.gradient2} id="cpu-power-issue" className={utilStyle.gradient2}>A) CPU power issue</h3>
                 <P>
                     Lighthouse has made it very easy to generate your site performance report. Just open your site, go to dev-tools click Audit Tab and run the test. Boom you got the results. But wait can you trust the score you just got the answer to this is a big no. Your results vary a lot when they are executed on a high-end machine vs when executed on a low-end machine because of different available CPU cycles to the lighthouse process. You can check the CPU/Memory power available to the lighthouse process during the test at the bottom of your lighthouse report.
                 </P>
@@ -120,7 +121,7 @@ export default function Home() {
                 <P>
                     Below are the lighthouse scores on the same machine when the lighthouse is executed 5 times for  housing.com once serially and once in parallel.  When executed serially results are completely different than when run in parallel. This is because available CPU cycles from the operating system get distributed to all 5 processes when run in parallel and are available to a single process when executed in serial.
                 </P>
-                <h4>When the lighthouse is executed 5 times on the housing home page serially.</h4>
+                <h4 className={utilStyle.gradient2}>When the lighthouse is executed 5 times on the housing home page serially.</h4>
                 <SyntaxHighlighter language="javascript" style={dark} customStyle={{ fontSize: '16px' }}>
                     {serialCodeString}
                 </SyntaxHighlighter>
@@ -133,7 +134,7 @@ export default function Home() {
                 <P>
                     Results are pretty much consistent.
                 </P>
-                <h4>When the same test is executed in parallel.</h4>
+                <h4 className={utilStyle.gradient2}>When the same test is executed in parallel.</h4>
                 <SyntaxHighlighter language="javascript" style={dark} customStyle={{ fontSize: '16px' }}>
                     {parallelCodeString}
                 </SyntaxHighlighter>
@@ -147,7 +148,7 @@ export default function Home() {
                     You can clearly see the difference in scores  between the two approaches.
                 </P>
 
-                <h2 key={3} id="application-behavior">B) Lighthouse covers only the most generic issues and do not understand your application behavior</h2>
+                <h2 className={utilStyle.gradient2} className={utilStyle.gradient2} id="application-behavior">B) Lighthouse covers only the most generic issues and do not understand your application behavior</h2>
                 <P>
                     This is the most complex issue which I see with lighthouse reporting. Every application is different and optimizes the available resource where it sees the best fit.
                 </P>
@@ -166,11 +167,11 @@ export default function Home() {
                 <P>
                     The only solution I see to this issue is to measure more and regular. Define core metrics your organization is concerned about and prioritize them properly. Performance has no meaning if it is at the cost of your core metrics like conversion.
                 </P>
-                <h2 id="score-inconsistency-issues">Solving the score inconsistency issue</h2>
+                <h2 className={utilStyle.gradient2} id="score-inconsistency-issues">Solving the score inconsistency issue</h2>
                 <P>
                     Inconsistency in lighthouse scores cannot be solved with 100% accuracy but can be controlled to a greater extent. The three possibilities I see are
                 </P>
-                <h3 id="using-hoisted-service">A) Using hoisted services</h3>
+                <h3 className={utilStyle.gradient2} id="using-hoisted-service">A) Using hoisted services</h3>
                 <P>
                     Cloud services are again an awesome way to test your site quickly and get a basic performance idea. Some of the google implementations like page speed insight tries to limit the inconsistency by including lighthouse lab data and field data (google tracks the performance score of all sites you visit if you allow Google to sync your history). Webpagetest queue the test request to control CPU cycles.
                 </P>
@@ -187,7 +188,7 @@ export default function Home() {
                     </li>
                 </ul>
                 <P>Results of 10 tests of a single page on web.dev  you will be amazed to see the delta in between min and max score. We usually prefer to take the median of all results or remove the first and last 3 outliers and take avg of the remaining 4 tests.</P>
-                <h3 id="self-hoisted-lighthouse-instance">B) Self hoisted lighthouse instance</h3>
+                <h3 className={utilStyle.gradient2} id="self-hoisted-lighthouse-instance">B) Self hoisted lighthouse instance</h3>
                 <P>
                     Lighthouse team has again done a great job here by providing a CI layer for self hoisting. The product is <a href="https://github.com/GoogleChrome/lighthouse-ci" target="_blank">lighthouse CI</a>.
                 This is an amazing tool that can be integrated with your CI Provider (Github Actions, Jenkins, Travis, etc) and you can configure it as per your needs. You can check the performance diff between two commits, Trigger lighthouse test on your new PR request.  Create a docker instance of it, this is a way where you can control CPU availability to some extent and get consistent results. We are doing this at housing.com and pretty much happy with the consistency of results.
@@ -195,7 +196,7 @@ export default function Home() {
                 <P>
                     The only problem at present I see with this approach is It is too complex to set up. We have wasted weeks to understand what exactly is going on. Documentation needs a lot of improvement and the process of integration should be simplified.
                 </P>
-                <h3 id="web-vitals">C) Integrating Web Vitals</h3>
+                <h3 className={utilStyle.gradient2} id="web-vitals">C) Integrating Web Vitals</h3>
                 <P>
                     Web vitals are core performance metrics provided by chrome performance api and have clear mapping with lighthouse. It is used to track field data. Send data tracked to GA or any other tool you use for that sake. We are using <a href="https://zizzamia.github.io/perfume/" target="_blank">perfume.js</a> as it provides more metrics we are interested in along with all provided by web vitals.
                 </P>
@@ -219,7 +220,7 @@ export default function Home() {
                 <P>
                     I know developers apply all sorts of tricks to improve their lighthouse score. From lazy loading offscreen content (We ourselves did this without measuring its impact but now we have a plan to run experiments around it) to delaying some critical third-party scripts. In most cases, developers do not measure the impact of their change on user experience or the users lost by the marketing team.
                 </P>
-                <h2 id="considering-lighthouse-suggestions">Considering lighthouse suggestions</h2>
+                <h2 className={utilStyle.gradient2} id="considering-lighthouse-suggestions">Considering lighthouse suggestions</h2>
                 <P>Lighthouse performance scores mostly depend upon the three parameters</P>
                 <ol>
                     <li><a className={styles.linkNav} href="#intial-render">How fast page rendered (FCP, LCP, Speed Index)</a></li>
@@ -232,7 +233,7 @@ export default function Home() {
                 <P>
                     I will take a few suggestions from each category of lighthouse report and see where they will bring benefit and where they will cause harm.
                 </P>
-                <h3 id="intial-render">How fast page rendered (FCP, LCP, Speed Index)</h3>
+                <h3 className={utilStyle.gradient2} id="intial-render">How fast page rendered (FCP, LCP, Speed Index)</h3>
                 <P>
                     Lighthouse suggests optimizing images by using modern image formats such as webp or avif and also resizing them to the dimension of the image container. This is a very cool optimization and can have a huge impact on your LCP score. You can enhance it further by preloading first fold images or serving them via server push.
                 </P>
@@ -242,7 +243,7 @@ export default function Home() {
                 <P>
                     A better approach is to implement it on a single page for a limited image and track your most critical metrics like conversion, bounce rate, etc. And if you are really happy with the ROI then take it live for all of your images.
                 </P>
-                <h3 id="page-interactivity">Page Interactivity (TBT, TTI)</h3>
+                <h3 className={utilStyle.gradient2} id="page-interactivity">Page Interactivity (TBT, TTI)</h3>
                 <P>
                     Lighthouse recommends reducing your Javascript, CSS size as much as possible. Javascript or CSS execution can choke the main thread and CPU will be unavailable for more important stuff like handling user interaction. This is a fair idea and most people understand the limitation of js being single-threaded.
                 </P>
@@ -269,7 +270,7 @@ export default function Home() {
                 <P>
                     Before taking any step to reducing javascript on your page like lazy loading off-screen components please calculate its impact on your primary metrics like conversion, user experience, etc.
                 </P>
-                <h2 id="stability">Stability (CLS)</h2>
+                <h2 className={utilStyle.gradient2} id="stability">Stability (CLS)</h2>
                 <P>
                     Every website must try to avoid any kind of layout shift which may cause issues in user experience. But there will be cases where you will not have many options to avoid CLS.
                 </P>
@@ -287,7 +288,7 @@ export default function Home() {
                 <img className={`${styles.image} ${styles.clsImage}`} src="/cls.gif" alt="google search result cls gif image" />
                 </P>
                 <br />
-                <h2 id="conclusion">Conclusion</h2>
+                <h2 className={utilStyle.gradient2} id="conclusion">Conclusion</h2>
                 <ol>
                     <li>Lighthouse is an awesome performance tool built by Google and can help you improve your website performance.</li>
                     <li>There are multiple issues related to how lighthouse work and the consistency of the results.</li>
