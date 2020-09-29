@@ -148,7 +148,7 @@ export default function Home() {
                     You can clearly see the difference in scores  between the two approaches.
                 </P>
 
-                <h3 id="do-not-understand-application">B) Lighthouse covers only the most generic issues and do not understand your application behaviour</h3>
+                <h3 id="do-not-understand-application">B) Lighthouse covers only the most generic issues and do not understand your application behavior</h3>
                 <P>
                     This is the most complex issue which I see with lighthouse reporting. Every application is different and optimizes the available resource where it sees the best fit.
                 </P>
