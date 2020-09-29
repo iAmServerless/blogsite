@@ -56,8 +56,8 @@ export default function Lighthouse() {
                 <meta property="og:title" content={title} />
                 <meta property="og:description" content={description} />
                 <meta property="og:image" content="https://ashu.online/lighthouse.png" />
-                <meta property="og:url" content="https://ashu.online/lighthouse-performance-auditing-things-you-should-know" />
-                <meta name="twitter:card" content={title} />
+                <meta property="og:url" content="https://ashu.online/blogs/lighthouse-performance-auditing-things-you-should-know" />
+                <meta name="twitter:card" content="Lighthouse_audit_report_issues_and_problem_with_suggestions" />
                 <meta name="twitter:site" content="@ashuanindian" />
                 <meta name="twitter:creator" content="@ashuanindian" />
                 <meta name="twitter:title" content={title} />
@@ -68,7 +68,7 @@ export default function Lighthouse() {
                 <meta name="keywords" content="lighthouse auditing, performance scores, lighthouse report, lighthouse limitations cpu, memory issues, lighthouse-ci server, web.dev, improve performance of web application" />
                 <link rel="icon" href="/favicon.ico" />
                 <meta name="robots" content="index, follow" />
-                <link rel="canonical" href="https://ashu.online/lighthouse-performance-auditing-things-you-should-know" />
+                <link rel="canonical" href="https://ashu.online/blogs/lighthouse-performance-auditing-things-you-should-know" />
             </Head>
             <BlogTop imgSrc='/lighthouse.png' alt='hero lighthouse score image in background' />
             <BlogContent>
