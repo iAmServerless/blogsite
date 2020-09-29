@@ -270,7 +270,7 @@ export default function Home() {
                 <P>
                     Before taking any step to reducing javascript on your page like lazy loading off-screen components please calculate its impact on your primary metrics like conversion, user experience, etc.
                 </P>
-                <h2 className={utilStyle.gradient2} id="stability">Stability (CLS)</h2>
+                <h3 className={utilStyle.gradient2} id="stability">Stability (CLS)</h3>
                 <P>
                     Every website must try to avoid any kind of layout shift which may cause issues in user experience. But there will be cases where you will not have many options to avoid CLS.
                 </P>
