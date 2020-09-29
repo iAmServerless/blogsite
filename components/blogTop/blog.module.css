@@ -19,3 +19,11 @@
     backdrop-filter: brightness(20%);
     padding: 2rem;
 }
+
+.logo {
+    width: 50px;
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    z-index: 1;
+}
