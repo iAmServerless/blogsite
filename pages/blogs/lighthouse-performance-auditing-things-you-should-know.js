@@ -44,16 +44,28 @@ exec(\`node \${lighthouseCli}
 }
 `
 
+let title = "Lighthouse web peformance audit suggestions and when to avoid them. prioritize your core matrices over lighthouse | Ashutosh Sharma | Housing.com"
+let description = "Lighthouse is amazing web perf audit tool but it has it's own limits. Any action you plan based on suggestions from lighthouse report needs through understanding of how it will impact your web application. Improving lighthouse score can improve your core matrics like conversion but sometime can decrease your product quality. In this article learn to avoid suggestion when you should"
 
 export default function Lighthouse() {
     return (
         <div className={`${themeStyles.background} ${themeStyles.textColor} ${styles.removePadding}`}>
             <Head>
                 <meta charSet="utf-8" />
-                <meta httpEquiv="content-type" content="text/html; charset=utf-8"></meta>
-                <title>Google lighhouse auditing - things you should know before believing the results</title>
-                <meta name="description" content="believing lighthouse results needs lot more understanding about how your reports are generated. Any action you plan based on suggestion from lighthouse report needs through understanding of how it will impact your web application" />
-                <meta name="keywords" content="lighthouse auditing, performance scores, lighthouse report, lighthouse limitations cpu, memory issues, lighthouse-ci server and web.dev" />
+                <meta httpEquiv="content-type" content="text/html; charset=utf-8" />
+                <meta property="og:title" content={title} />
+                <meta property="og:description" content={description} />
+                <meta property="og:image" content="https://ashu.online/lighthouse.png" />
+                <meta property="og:url" content="https://ashu.online/lighthouse-performance-auditing-things-you-should-know" />
+                <meta name="twitter:card" content={title} />
+                <meta name="twitter:site" content="@ashuanindian" />
+                <meta name="twitter:creator" content="@ashuanindian" />
+                <meta name="twitter:title" content={title} />
+                <meta name="twitter:description" content={description} />
+                <meta name="twitter:image" content="https://ashu.online/lighthouse.png" />
+                <title>{title}</title>
+                <meta name="description" content={description} />
+                <meta name="keywords" content="lighthouse auditing, performance scores, lighthouse report, lighthouse limitations cpu, memory issues, lighthouse-ci server, web.dev, improve performance of web application" />
                 <link rel="icon" href="/favicon.ico" />
                 <meta name="robots" content="index, follow" />
                 <link rel="canonical" href="https://ashu.online/lighthouse-performance-auditing-things-you-should-know" />

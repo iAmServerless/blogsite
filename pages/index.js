@@ -12,8 +12,8 @@ export default function Home() {
   return (
     <Layout>
       <Head>
-        <meta charset="utf-8" />
-        <meta http-equiv="content-type" content="text/html; charset=utf-8"></meta>
+        <meta charSet="utf-8" />
+        <meta httpEquiv="content-type" content="text/html; charset=utf-8"></meta>
         <title>Ashutosh Sharma | Frontend Architect at housing.com | Ex Times Internet, Goibibo, Zoho | Javascript, React, Rust</title>
         <meta name="description" content="Ashutosh Sharma is a frontend architect at housing.com and is proficient in high-performance web applications. He worked extensively on Javascript, React, CI/CD, performance tracking, and writing scalable frontend application" />
         <meta name="keywords" content="Ashutosh Sharma, Frontend Architect, Frontend performance, React, Javascript" />

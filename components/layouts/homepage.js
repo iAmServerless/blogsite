@@ -5,7 +5,7 @@ import themeStyles from '../../styles/theme.module.css';
 export const siteTitle = 'Ashutosh Sharma frontend developer and manager. I am mad for web performance. Ex ZOHO | Housing.com | goibibo.com | Times Internet'
 
 function Layout({ children }) {
-    return <div className={`${themeStyles.background} ${themeStyles.textColor}`}>
+    return <div className={`${themeStyles.background} ${themeStyles.textColor} ${themeStyles.padding}`}>
         <Head>
         <link rel="icon" href="/favicon.ico" />
         <meta

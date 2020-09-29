@@ -7,8 +7,8 @@ export default function Description(props) {
         <Link href='/'><a className={styles.logo}><img src="/logo.png" /></a></Link>
         <img className={styles.heroImage} src={props.imgSrc} alt={props.imageAlt} />
         <div className={`${styles.title}`}>
-            <h1 className={utilStyles.gradient2}>Lighthouse Auditing, things you should know</h1>
-            <h3 className={utilStyles.gradient2}>It's not always what you think</h3>
+            <h1 className={utilStyles.gradient2}>Avoiding Lighthouse Suggestions</h1>
+            <h3 className={utilStyles.gradient2}>Make an informative decision before picking another optimization suggestion</h3>
         </div>
     </div>
 
