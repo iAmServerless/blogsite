@@ -115,7 +115,7 @@ export default function Lighthouse() {
                 <h2 className={utilStyle.gradient2} id="issues-to-be-solved" className={utilStyle.gradient2}>Issues which needs to be tackled</h2>
                 <h3 className={utilStyle.gradient2} id="cpu-power-issue" className={utilStyle.gradient2}>A) CPU power issue</h3>
                 <P>
-                    Lighthouse has made it very easy to generate your site performance report. Just open your site, go to dev-tools click Audit Tab and run the test. Boom you got the results. But wait can you trust the score you just got the answer to this is a big no. Your results vary a lot when they are executed on a high-end machine vs when executed on a low-end machine because of different available CPU cycles to the lighthouse process. You can check the CPU/Memory power available to the lighthouse process during the test at the bottom of your lighthouse report.
+                    Lighthouse has made it very easy to generate your site performance report. Just open your site, go to dev-tools click Audit Tab, and run the test. Boom you got the results. But wait can you trust the score you just got the answer to this is a big no. Your results vary a lot when they are executed on a high-end machine vs when executed on a low-end machine because of different available CPU cycles to the lighthouse process. You can check the CPU/Memory power available to the lighthouse process during the test at the bottom of your lighthouse report.
                 </P>
                 <br />
                 <img className={`${styles.image} ${styles.lighthouse_meta_data}`} src="/lighthouse_screen_shot.png" alt="lighthouse meta data" />
@@ -173,13 +173,13 @@ export default function Lighthouse() {
                     There are many similar applications like Twitter, Revamped version of Facebook which has worked extensively on performance but lighthouse mark them as poor performance applications.
                 </P>
                 <P>
-                    All of these companies have some of the best brains who very well understand the limitations of the tool so they know what to fix and what aspects to be ignored from lighthouse suggestions. The problem is with organizations who do not have resources to and time to explore and understand these limitations. Search google for “perfect lighthouse score” and you will find 100’s of blogs explaining how to achieve 100 on the lighthouse. Most of them have never checked other critical metrics like conversion or Bounce rate.
+                    All of these companies have some of the best brains who very well understand the limitations of the tool so they know what to fix and what aspects to be ignored from lighthouse suggestions. The problem is with organizations that do not have resources to and time to explore and understand these limitations. Search google for “perfect lighthouse score” and you will find 100’s of blogs explaining how to achieve 100 on the lighthouse. Most of them have never checked other critical metrics like conversion or Bounce rate.
                 </P>
                 <P>
-                    One big issue with google’s integration of lighthouses is that these tools are mostly used by non-technology people. Google search console which helps in analysing the sites position in google search result is mostly used by marketing teams. Marketing teams report performance issues reported in the search console to higher management who do not understand the limitations of the tool and force the tech team to improve performance at any cost (as it may bring more traffic). Now the tech team has two options Either to push back and explain limitations of the tool to higher management which happens rarely or take bad decisions that may impact other critical metrics like conversion, bounce rate, etc. I know many large companies lack processes to regularly check these crucial metrics.
+                    One big issue with google’s integration of lighthouses is that these tools are mostly used by non-technology people. Google search console which helps in analyzing the site's position in the google search result is mostly used by marketing teams. Marketing teams report performance issues reported in the search console to higher management who do not understand the limitations of the tool and force the tech team to improve performance at any cost (as it may bring more traffic). Now the tech team has two options Either to push back and explain limitations of the tool to higher management which happens rarely or take bad decisions that may impact other critical metrics like conversion, bounce rate, etc. I know many large companies lack processes to regularly check these crucial metrics.
                 </P>
                 <P>
-                    The only solution I see to this issue is to measure more and regular. Define core metrics your organization is concerned about and prioritize them properly. Performance has no meaning if it is at the cost of your core metrics like conversion.
+                    The only solution I see to this issue is to measure more and regularly. Define core metrics your organization is concerned about and prioritize them properly. Performance has no meaning if it is at the cost of your core metrics like conversion.
                 </P>
                 <h2 className={utilStyle.gradient2} id="score-inconsistency-issues">Solving the score inconsistency issue</h2>
                 <P>
@@ -222,7 +222,7 @@ export default function Lighthouse() {
                 <img className={`${styles.image} ${styles.perf_matrics}`} src="/metrics.png" alt="performance metrics tracked at housing" />
                 <br />
                 <P>
-                    We worked on improving our Total Blocking Time(TBT) and Largest Contentful Paint(LCP) after identifying problem areas
+                    We worked on improving our Total Blocking Time(TBT) and the Largest Contentful Paint(LCP) after identifying problem areas
                 </P>
                 <br />
                 <img className={`${styles.image} ${styles.perf_matrics}`} src="/tbt.png" alt="total blocking time improvement at housing.com" />
@@ -255,7 +255,7 @@ export default function Lighthouse() {
                     To build a system where images are resized on the fly or pre resized to multiple possible dimensions on upload is a tedious task. In both ways, depending upon your scale you might need to take a huge infra burden that needs to be maintained and also continuously invest.
                 </P>
                 <P>
-                    A better approach is to implement it on a single page for a limited image and track your most critical metrics like conversion, bounce rate, etc. And if you are really happy with the ROI then take it live for all of your images.
+                    A better approach is to implement it on a single page for a limited image and track your most critical metrics like conversion, bounce rate, etc. And if you are really happy with the ROI then take it to live for all of your images.
                 </P>
                 <h3 className={utilStyle.gradient2} id="page-interactivity">Page Interactivity (TBT, TTI)</h3>
                 <P>
