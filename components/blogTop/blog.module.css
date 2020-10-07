@@ -18,7 +18,7 @@
     min-width: 80%;
     transform: translate(-50%, -50%);
     backdrop-filter: brightness(20%);
-    padding: 2rem;
+    padding: 1rem;
 }
 
 .logo {
