@@ -44,7 +44,7 @@ exec(\`node \${lighthouseCli}
 }
 `
 
-let title = "Lighthouse web peformance audit suggestions and when to avoid them. prioritize your core matrices over lighthouse | Ashutosh Sharma | Housing.com"
+let title = "Lighthouse web peformance audit suggestions and issues. How and when to avoid them. prioritize your core matrices over lighthouse | Ashutosh Sharma | Housing.com"
 let description = "Lighthouse is amazing web perf audit tool but it has it's own limits. Any action you plan based on suggestions from lighthouse report needs through understanding of how it will impact your web application. Improving lighthouse score can improve your core matrics like conversion but sometime can decrease your product quality. In this article learn to avoid suggestion when you should"
 
 export default function Lighthouse() {
@@ -306,7 +306,7 @@ export default function Lighthouse() {
                 <ol>
                     <li>Lighthouse is an awesome performance tool built by Google and can help you improve your website performance.</li>
                     <li>There are multiple issues related to how lighthouse work and the consistency of the results.</li>
-                    <li>Devices with different configurations can give completely different scores so it is important to stick to a single device configuration while running a lighthouse.
+                    <li>Devices with different configurations can give completely different scores so it is important to stick to a single device configuration while running a lighthouse process.
 </li>
                     <li>The same device can give different scores based on how much CPU is available to the lighthouse process during the test.
 </li>
