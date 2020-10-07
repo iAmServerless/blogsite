@@ -46,7 +46,7 @@ function ProjectCard({project}) {
     return <div className={styles.projectCard}>
         <a href={project.link} target='_blank'>
             <img className={styles.projectImage} src={project.logo} alt={project.desc}/>
-            <div className={`button ${styles.buttonStyle} ${utilStyles.gradient}`}>{project.name}</div>
+            <div className={`button ${styles.buttonStyle}`}>{project.name}</div>
         </a>
     </div>
 }
