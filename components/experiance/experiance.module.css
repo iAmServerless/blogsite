@@ -1,18 +1,19 @@
 .container {
+    padding: 4rem 1rem;
     content-visibility: auto;
+    background-color: #422662;
 }
 .cards {
     display: grid;
 }
 
+.lightWhite {
+    color: #ddd;
+    margin: 0.1rem 0 0.8rem 0;
+}
+
 .experianceCard {
-    padding: 2rem 0rem;
-    background: radial-gradient( 
-        #ffff00 ,
-        #ff0000
-    ) fixed;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    padding: 2rem 0;
 }
 
 .my-masonry-grid {
@@ -31,6 +32,7 @@
         padding: 2rem 2rem;
     }
     .container {
-        padding: 0 4rem;
+        padding: 4rem 4rem;
+        background-color: #422662;
     }
   }

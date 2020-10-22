@@ -11,19 +11,19 @@
 .svgwrap a svg {
     width: 35px;
     height: 35px;
-    fill: #ddffaa;
+    fill: #422662;
     transition: fill 0.2s ease-in-out;
     margin-right: 13px;
 }
 
 .svgwrap a:hover svg {
-    fill: #ffbb00;
+    fill: #999;
     cursor: pointer;
 }
 
 .svgwrap a:hover {
     background-color: transparent;
-    color: #ffbb00;
+    color: #ddd;
     cursor: pointer;
 }
 

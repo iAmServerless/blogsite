@@ -1,23 +1,30 @@
 .heroImage {
     width: 100%;
-    height: 520px;
+    max-height: 520px;
     object-fit: cover;
-    filter: blur(10px);
 }
 
 .container {
     position: relative;
 }
 
-.title {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    text-align: center;
-    letter-spacing: 3px;
+.heading {
+    max-width: 880px;
+    margin: 20px auto 0 auto;
+    color: #422662;
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+    line-height: 1.3;
+}
+
+.subHeading {
+    max-width: 880px;
+    margin: 10px auto 0 auto;
+    color: #422662;
+}
+
+.title {  
     min-width: 80%;
-    transform: translate(-50%, -50%);
-    backdrop-filter: brightness(20%);
     padding: 1rem;
 }
 
@@ -28,3 +35,10 @@
     top: 20px;
     z-index: 1;
 }
+
+
+@media only screen and (min-width: 768px) {
+    .title { 
+        text-align: center;
+    }
+  }

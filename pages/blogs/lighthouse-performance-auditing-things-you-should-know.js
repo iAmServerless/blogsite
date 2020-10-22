@@ -204,7 +204,7 @@ export default function Lighthouse() {
                 <P>Results of 10 tests of a single page on web.dev  you will be amazed to see the delta in between min and max score. We usually prefer to take the median of all results or remove the first and last 3 outliers and take avg of the remaining 4 tests.</P>
                 <h3 className={utilStyle.gradient2} id="self-hoisted-lighthouse-instance">B) Self hoisted lighthouse instance</h3>
                 <P>
-                    Lighthouse team has again done a great job here by providing a CI layer for self hoisting. The product is <a href="https://github.com/GoogleChrome/lighthouse-ci" target="_blank">lighthouse CI</a>.
+                    Lighthouse team has again done a great job here by providing a CI layer for self hoisting. The product is <a href="https://github.com/GoogleChrome/lighthouse-ci" target="_blank" rel="noopener noreferrer">lighthouse CI</a>.
                 This is an amazing tool that can be integrated with your CI Provider (Github Actions, Jenkins, Travis, etc) and you can configure it as per your needs. You can check the performance diff between two commits, Trigger lighthouse test on your new PR request.  Create a docker instance of it, this is a way where you can control CPU availability to some extent and get consistent results. We are doing this at housing.com and pretty much happy with the consistency of results.
                 </P>
                 <P>
@@ -212,7 +212,7 @@ export default function Lighthouse() {
                 </P>
                 <h3 className={utilStyle.gradient2} id="web-vitals">C) Integrating Web Vitals</h3>
                 <P>
-                    Web vitals are core performance metrics provided by chrome performance api and have clear mapping with lighthouse. It is used to track field data. Send data tracked to GA or any other tool you use for that sake. We are using <a href="https://zizzamia.github.io/perfume/" target="_blank">perfume.js</a> as it provides more metrics we are interested in along with all provided by web vitals.
+                    Web vitals are core performance metrics provided by chrome performance api and have clear mapping with lighthouse. It is used to track field data. Send data tracked to GA or any other tool you use for that sake. We are using <a href="https://zizzamia.github.io/perfume/" target="_blank" rel="noopener noreferrer">perfume.js</a> as it provides more metrics we are interested in along with all provided by web vitals.
                 </P>
                 <P>
                     This is the most consistent and reliable among all the other approaches as It is the average performance score of your entire user base. We are able to make huge progress in optimizing our application by validating this data.

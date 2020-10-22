@@ -35,12 +35,11 @@ export default function Contact() {
             a.focus,
             .button{
                 color: white;
-                background: #243342;
+                background: #422662;
             }
             a.focus:hover,
             .button:hover{
                 cursor: pointer;
-               color: #1bf1dc;
             }
             a:hover {
                 background-color: #243342;
@@ -74,15 +73,13 @@ export default function Contact() {
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                overflow: auto;
-                padding: 20px;
             }
             
             
             .contact{
                 width: 100%;
-                max-width: 1080px;
                 display: flex;
+                margin: 4rem 0;
                  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.28);
              border-radius: 5px;
              overflow: hidden;
@@ -126,9 +123,7 @@ export default function Contact() {
                 
             }
             .form h1{
-                background: radial-gradient( #ffff00 , #ff0000 ) fixed;
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
+                color: #422662;
                 text-align: center;
                 margin-bottom: 20px;
                 width: 100%;
@@ -175,9 +170,7 @@ export default function Contact() {
             }
             
             h2 {
-                background: radial-gradient( #ffff00 , #ff0000 ) fixed;
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
+                color: #ddd;
             }
             
             .info h2 {
@@ -185,9 +178,7 @@ export default function Contact() {
             }
             
             .info h3 {
-                background: radial-gradient( #ffff00 , #ff0000 ) fixed;
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
+                color: #ccc;
                 letter-spacing: 1.2px;
                 margin-top:  20px;
             }
@@ -215,19 +206,19 @@ export default function Contact() {
             .svg-wrap a svg {
                 width: 20px;
                 height: 20px;
-                fill: white;
+                fill: #ccc;
                 transition: fill 0.2s ease-in-out;
                 margin-right: 13px;
             }
             
             .svg-wrap a:hover svg {
-                fill: #16f1dc;
+                fill: #d4afff;
                 cursor: pointer;
             }
             
             .svg-wrap a:hover {
                 background-color: transparent;
-                color: #16f1dc;
+                color: #ddd;
                 cursor: pointer;
             }
             @media only screen and (max-width: 768px){
@@ -235,18 +226,21 @@ export default function Contact() {
                     display:none;
                 } 
                 .container {
-                    padding: 0;
+                    padding: 0 1rem;
                 }
                 .form {
                     width: 100%;
                 }
                 .content {
                     padding: 20px 0 0;
-                }               
+                }       
+                .contact {
+                    margin: 2rem 0;
+                }        
             }
             
         `}</style>
-        <h1 className={`${utilStyles.heading2Xl} ${utilStyles.underline} ${utilStyles.gradient} ${utilStyles.margin4}`}>Contact Details</h1>
+        <h1 className={`${utilStyles.headingXl} ${utilStyles.fadeBlack} ${utilStyles.underline}`}>Contact</h1>
         <div className="content">
 	    <div className="contact">
             <div className="other">

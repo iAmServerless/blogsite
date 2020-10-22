@@ -12,9 +12,9 @@ const breakpointColumnsObj = {
   let experiances = [
     {
           name: 'Housing.com',
-          role: 'Technology Lead',
+          role: 'Engineering Manager',
           year: 'Jun 2018 - Present',
-          responsibility: 'Managing a team of Senior Engineers responsible for Housing demand-side application. Led the development of continuous delivery infrastructure to enable build, automation, deployment, and monitoring. Designed a monitoring system to perform real-user performance monitoring. This infrastructure helps housing.com to keep perfect track of performance per release. Responsible for recruiting, training, and mentoring talented engineers'
+          responsibility: 'Managing a team of Senior Engineers responsible for Housing demand-side application. Responsible for recruiting, training, and mentoring talented engineers'
     }, {
         name: 'Times Internet',
         role: 'Frontend Manager',
@@ -46,7 +46,7 @@ function ExperianceDetails({experiance}) {
 
 export default function Experiance() {
     return <div className={styles.container}>
-        <h1 className={`${utilStyles.heading2Xl} ${utilStyles.underline} ${utilStyles.gradient} ${utilStyles.margin4}`}>Experiance</h1>
+        <h1 className={`${styles.lightWhite} ${utilStyles.underline}`}>EXPERIANCE</h1>
         <div className={styles.cards}>
         <Masonry
         breakpointCols={breakpointColumnsObj}

@@ -52,7 +52,7 @@ function SkillsCard({skill}) {
 
 export default function Skills() {
     return <div className={styles.container}>
-        <h1 className={`${utilStyles.heading2Xl} ${utilStyles.underline} ${utilStyles.gradient} ${utilStyles.margin4}`}>Skills</h1>
+        <h1 className={`${utilStyles.headingXl} ${utilStyles.fadeBlack} ${utilStyles.underline}`}>Skills</h1>
         <div className={styles.cards}>
             {
                 skills.map((skill, i) => {

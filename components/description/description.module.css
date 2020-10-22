@@ -1,16 +1,12 @@
 .container {
-    min-height:100vh;
     display: grid;
     content-visibility: auto;
     grid-template-columns: 1fr;
+    background: #422662;
+    padding: 0 1.2rem;
+    height:80vh;
 }
 .details {
-    background: radial-gradient( 
-        #ffff00 ,
-        #ff0000
-    ) fixed;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
     display: grid;
     align-items: center;
     align-content: center;
@@ -18,16 +14,24 @@
 }
 
 .animation {
-    max-height: 50vh;
+    display: none;
+}
+
+.description {
+    display: none;
 }
 
 @media only screen and (min-width: 768px) {
     .container {
-        min-height:500px;
         grid-template-columns: repeat(2, minmax(320px, 1fr));
+        padding: 0 1.2rem;
+    }
+    .description {
+        display: block;
     }
     .animation {
         max-height: none;
+        display: block;
     }
     .details {
         padding: 1rem;

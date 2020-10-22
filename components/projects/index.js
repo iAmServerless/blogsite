@@ -53,7 +53,7 @@ function ProjectCard({project}) {
 
 export default function Projects() {
     return <div className={styles.container}>
-        <h1 className={`${utilStyles.heading2Xl} ${utilStyles.underline} ${utilStyles.gradient} ${utilStyles.margin4}`}>Projects</h1>
+        <h1 className={`${utilStyles.headingXl} ${utilStyles.fadeBlack} ${utilStyles.underline}`}>Projects</h1>
         <div className={styles.cards}>
         <Masonry
         breakpointCols={breakpointColumnsObj}
