@@ -93,7 +93,7 @@ export default function Lighthouse() {
                             </ul>
                         </li>
                         <li>
-                            <a className={styles.linkNav} href="#score-inconsistency-issues">Solving the score consistency issue</a>
+                            <a className={styles.linkNav} href="#score-inconsistency-issues">Solving the score inconsistency issue</a>
                             <ul>
                                 <li><a className={styles.linkNav} href="#using-hoisted-service">Using hoisted services</a></li>
                                 <li><a className={styles.linkNav} href="#self-hoisted-lighthouse-instance">Self hoisted lighthouse instance</a></li>
