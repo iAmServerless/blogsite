@@ -26,7 +26,7 @@ export default function Dns() {
                 <meta name="twitter:description" content={description} />
                 <meta name="twitter:image" content="https://ashu.online/dns.jpeg" />
                 <meta property="og:site_name" content="Ashutosh Sharma Blogs | ashu.online" />
-                <meta name="twitter:image:alt" content="Lighthouse Performance Report" />
+                <meta name="twitter:image:alt" content="DNS Performance optimization" />
                 <title>{title}</title>
                 <meta name="description" content={description} />
                 <meta name="keywords" content="dns resolution, Time to Live (TTL), A record, AAAA record, CNAME record, route53, custom name server, CDN, root servers, authoritative name servers" />
