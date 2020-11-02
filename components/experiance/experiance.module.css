@@ -25,6 +25,14 @@
   .my-masonry-grid_column {
     background-clip: padding-box;
   }
+
+  .description {
+    display: block;
+    color: #ccc;
+    letter-spacing: 1px;
+    font-size: 1.2rem;
+    line-height: 2rem;
+}
   
 
 @media only screen and (min-width: 768px) {
