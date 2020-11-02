@@ -72,7 +72,7 @@ export default function Lighthouse() {
                 <meta name="robots" content="index, follow" />
                 <link rel="canonical" href="https://ashu.online/blogs/lighthouse-performance-auditing-things-you-should-know" />
             </Head>
-            <BlogTop imgSrc='/lighthouse.png' alt='hero lighthouse score image in background' />
+            <BlogTop imgSrc='/lighthouse.png' alt='hero lighthouse score image in background' heading='Lighthouse: Expectation vs. Reality' subHeading='Make an informative decision before picking another optimization suggestion'/>
             <BlogContent>
                 <P>
                     When someone starts looking for optimizing the performance of their web application they immediately come across this tool called lighthouse by google.</P>
@@ -112,8 +112,8 @@ export default function Lighthouse() {
                             <a className={styles.linkNav} href="#conclusion">Conclusion</a>
                         </li>
                     </ul>
-                <h2 className={utilStyle.gradient2} id="issues-to-be-solved" className={utilStyle.gradient2}>Issues which needs to be tackled</h2>
-                <h3 className={utilStyle.gradient2} id="cpu-power-issue" className={utilStyle.gradient2}>A) CPU power issue</h3>
+                <h2 id="issues-to-be-solved">Issues which needs to be tackled</h2>
+                <h3 id="cpu-power-issue">A) CPU power issue</h3>
                 <P>
                     Lighthouse has made it very easy to generate your site performance report. Just open your site, go to dev-tools click Audit Tab, and run the test. Boom you got the results. But wait can you trust the score you just got the answer to this is a big no. Your results vary a lot when they are executed on a high-end machine vs when executed on a low-end machine because of different available CPU cycles to the lighthouse process. You can check the CPU/Memory power available to the lighthouse process during the test at the bottom of your lighthouse report.
                 </P>
