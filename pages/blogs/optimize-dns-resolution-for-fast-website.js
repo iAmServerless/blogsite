@@ -34,7 +34,7 @@ export default function Dns() {
                 <meta name="robots" content="index, follow" />
                 <link rel="canonical" href="https://ashu.online/blogs/optimize-dns-resolution-for-fast-website" />
             </Head>
-            <BlogTop imgSrc='/dns.jpeg' alt='hero DNS resolution image in the background' heading="Optimize your DNS Resolution today, don't ignore the first thing that happens on the web" subHeading='Optimize the most common missed opportunity to keep an edge over your competitors.'/>
+            <BlogTop imgSrc='/fastdns.jpg' alt='hero DNS resolution image in the background' heading="Optimize your DNS Resolution today, don't ignore the first thing that happens on the web" subHeading='Optimize the most common missed opportunity to keep an edge over your competitors.'/>
             <BlogContent>
                 <P>
                 DNS resolution is the first thing that happens when a request is made to a remote server. It is a process of finding the computer-friendly address of the remote server using a human-friendly domain name.
@@ -42,6 +42,7 @@ export default function Dns() {
                 <P>
                 There are few performance improvement possibilities like perfect cache invalidation time. Preferring A record over CNAME. But before all these let's understand how DNS resolution actually works.
                 </P>
+                <img className={`${styles.image} ${styles.dns_image}`} src="/dns.jpeg" alt="DNS hand made image" />
                 <ol>
                     <li>A network request is made to the server using its domain name.</li>
                     <li>The browser first checks its DNS cache, if present use the IP address else asks Operating System.</li>

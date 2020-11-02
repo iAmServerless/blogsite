@@ -32,6 +32,7 @@
     }
     .description {
         display: block;
+        color: #ccc;
     }
     .animation {
         max-height: none;

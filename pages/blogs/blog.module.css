@@ -30,6 +30,10 @@
     color: #ddd;
 }
 
+.dns_image {
+    filter: invert(1) drop-shadow(2px 4px 6px black);
+}
+
 @media only screen and (min-width: 768px) {
     .removePadding {
         padding: 0rem;
