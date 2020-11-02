@@ -33,6 +33,9 @@
     .description {
         display: block;
         color: #ccc;
+        letter-spacing: 1px;
+        font-size: 1.2rem;
+        line-height: 2rem;
     }
     .animation {
         max-height: none;
