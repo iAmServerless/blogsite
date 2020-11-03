@@ -8,6 +8,7 @@ import BlogTop from '../../components/blogTop'
 import BlogContent from '../../components/blogContent'
 import P from '../../components/paragraph'
 import Follow from '../../components/followMe'
+import Tracker from '../../components/tracker'
 
 let serialCodeString = `
  let numberOfTests = 5;
@@ -124,6 +125,7 @@ export default function Lighthouse() {
                     But on a very high-end machine like new fancy MacBook Pro throttling CPU cycles does not drop CPU cycles to the desired level.
                 </P>
                 <h4>For example</h4>
+                <Tracker id="25" name="After For example"/>
                 <P>
                     let a high-end processor like intel i7 can execute 1200 instructions in a sec by throttling it 4x only 300 instructions will get executed. Similarly, a low-end processor like intel i3 can only execute 400 instructions in a sec and by throttling it to 4x only 100 instructions can get executed.
                 </P>
@@ -182,6 +184,7 @@ export default function Lighthouse() {
                     The only solution I see to this issue is to measure more and regularly. Define core metrics your organization is concerned about and prioritize them properly. Performance has no meaning if it is at the cost of your core metrics like conversion.
                 </P>
                 <h2 className={utilStyle.gradient2} id="score-inconsistency-issues">Solving the score inconsistency issue</h2>
+                <Tracker id="50" name="After Solving the score inconsistency issue"/>
                 <P>
                     Inconsistency in lighthouse scores cannot be solved with 100% accuracy but can be controlled to a greater extent. The three possibilities I see are
                 </P>
@@ -248,6 +251,7 @@ export default function Lighthouse() {
                     I will take a few suggestions from each category of lighthouse report and see where they will bring benefit and where they will cause harm.
                 </P>
                 <h3 className={utilStyle.gradient2} id="intial-render">How fast page rendered (FCP, LCP, Speed Index)</h3>
+                <Tracker id="75" name="After How fast page rendered"/>
                 <P>
                     Lighthouse suggests optimizing images by using modern image formats such as webp or avif and also resizing them to the dimension of the image container. This is a very cool optimization and can have a huge impact on your LCP score. You can enhance it further by preloading first fold images or serving them via server push.
                 </P>
@@ -317,6 +321,7 @@ export default function Lighthouse() {
                     <li>Define critical metrics to your website like conversion, bounce rate, user experience, etc. Plan any optimization suggestion from the lighthouse after tracking the impact of it on your critical metrics.</li>
                     <li>Never do premature optimization for the sake of a high lighthouse score. Simple lazy loading of offscreen components to reduce javascript size in some cases can drastically reduce user experience so prefer caution while making such changes.</li>
                 </ol>
+                <Tracker id="100" name="After conclusion"/>
             </BlogContent>
             <Follow />
         </div>

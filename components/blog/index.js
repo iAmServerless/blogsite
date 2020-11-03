@@ -12,16 +12,16 @@ const breakpointColumnsObj = {
 
   let blogs = [
     {
+        title: "Optimize your DNS Resolution today, don't ignore the first thing that happens on the web",
+        author: 'Ashutosh Sharma',
+        description: 'Optimize the most common missed opportunity to keep an edge over your competitors.',
+        url: '/blogs/optimize-dns-resolution-for-fast-website'
+    },
+    {
           title: 'Lighthouse: Expectations vs. Reality',
           author: 'Ashutosh Sharma',
           description: 'Your core metrics may not have a direct correlation with lighthouse scores.',
           url: '/blogs/lighthouse-performance-auditing-things-you-should-know'
-    },
-    {
-          title: "Optimize your DNS Resolution today, don't ignore the first thing that happens on the web",
-          author: 'Ashutosh Sharma',
-          description: 'Optimize the most common missed opportunity to keep an edge over your competitors.',
-          url: '/blogs/optimize-dns-resolution-for-fast-website'
     }
   ]
 

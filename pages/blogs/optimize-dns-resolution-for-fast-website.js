@@ -5,6 +5,7 @@ import BlogTop from '../../components/blogTop'
 import BlogContent from '../../components/blogContent'
 import P from '../../components/paragraph'
 import Follow from '../../components/followMe'
+import Tracker from '../../components/tracker';
 
 let title = "Optimize your DNS Resolution today, don't ignore the first thing that happens on the web | Ashutosh Sharma | Housing.com"
 let description = "DNS resolution is the first thing that happens on the web. Optimizing it can significantly reduce the DNS resolution latency. There are simple tricks to reduce latency like fixing your Time to Live(TTL), Playing with name servers, using CDN, etc."
@@ -55,6 +56,7 @@ export default function Dns() {
                     <li>Name servers know the real IP address of the requested domain.</li>
                     <li>The Browser receives the resolved IP address.</li>
                 </ol>
+                <Tracker id="25" name="After how dns works"/>
                 <P>
                 Ahh too confusing and too much to remember. Let's keep it simple and know what is in our control and find the scope of performance improvements.
                 </P>
@@ -73,6 +75,7 @@ export default function Dns() {
                     <li>Define how to resolve a particular request. For mails check MX record. For HTTP/HTTPS check A, AAAA, or CNAME record.</li>
                 </ol>
                 <h2>DNS Performance Optimization Opportunities</h2>
+                <Tracker id="50" name="After DNS Performance Optimization Opportunities"/>
                 <h3>Increase cache invalidation time</h3>
                 <P>Increasing cache invalidation time will ensure that the domain IP addresses will be served from the nearest cache. This will result in low latency DNS resolution.</P>
                 <P>This will be a problem in cases where domain to IP mapping is frequently changed.</P>
@@ -98,6 +101,7 @@ export default function Dns() {
                 <P>CNAME or Canonical Name is like recursion where one domain resolves to another domain. The DNS resolution algorithm keeps looking until it finds the real IP address.</P>
                 <P>In most cases replacing CNAME will not be possible because of no control over the resolved IP address. This rule is only applicable for cases where IP address is known but still, CNAME is preferable due to unmanageable DNS records. DNS records if not maintained properly becomes unmanageable in most mid to large-scale organizations.</P>
                 <h3>Use CDN which uses their own name servers.</h3>
+                <Tracker id="75" name="Use CDN which uses their own name servers."/>
                 <P>CDN works in two ways.</P>
                 <ol>
                     <li>Ask to replace registrar name servers with their name servers.</li>
@@ -105,7 +109,7 @@ export default function Dns() {
                 </ol>
                 <P>Both approaches have their own Pros and Cons. The first one is good for fast DNS resolution. The second one gives more flexibility and control to the maintainer.</P>
                 <P>CDN has other limitations they are yet not equipped to serve dynamic content. There is some development in this area like using lambda on the edge(AWS) but still, there is a long path to cover.</P>
-                <h3>Use custom name servers (only for large scale applications)</h3>
+                <h3>Use custom name servers</h3>
                 <P>The purpose of name servers is to provide a real IP address that corresponds to a domain. Using custom logic a domain can be resolved to a different IP each time it receives a request.</P>
                 <P>CDN uses this approach to serve content from the nearest host to the user but they can't be used for dynamic content.</P>
                 <P>Using custom name servers to resolve IP addresses based on the region can significantly reduce latency.</P>
@@ -131,6 +135,7 @@ export default function Dns() {
                     <li>Custom name servers are hard to put in place.</li>
                 </ol>
                 <p><strong>Figure out appetite for performance at your organization and accordingly tune DNS settings.</strong></p>
+                <Tracker id="100" name="After conclusion"/>
             </BlogContent>
             <Follow />
         </div>)
