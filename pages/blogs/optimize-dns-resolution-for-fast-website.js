@@ -100,6 +100,7 @@ export default function Dns() {
                 <h3>Use A or AAAA record wherever possible in place of CNAME</h3>
                 <P>CNAME or Canonical Name is like recursion where one domain resolves to another domain. The DNS resolution algorithm keeps looking until it finds the real IP address.</P>
                 <P>In most cases replacing CNAME will not be possible because of no control over the resolved IP address. This rule is only applicable for cases where IP address is known but still, CNAME is preferable due to unmanageable DNS records. DNS records if not maintained properly becomes unmanageable in most mid to large-scale organizations.</P>
+                <P>Some CDN and DNS service providers use a concept of CNAME Flattening to resolve IP directly without going through the whole chain of DNS resolution. Opt for it if your CDN or DNS service provider has support for it.</P>
                 <h3>Use CDN which uses their own name servers.</h3>
                 <Tracker id="75" name="Use CDN which uses their own name servers."/>
                 <P>CDN works in two ways.</P>
