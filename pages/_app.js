@@ -56,6 +56,14 @@ export default function App({ Component, pageProps }) {
             }}
           />
           <script
+            id="mcjs"
+            dangerouslySetInnerHTML={{
+              __html: `
+              !function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/7a8068e8e0107b9c60659c135/15bd39bb12076a7c78750bd9e.js");
+          `,
+            }}
+          />
+          <script
             dangerouslySetInnerHTML={{
               __html: `
               (function(){
