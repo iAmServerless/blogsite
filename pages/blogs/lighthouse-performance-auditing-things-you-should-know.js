@@ -9,6 +9,7 @@ import BlogContent from '../../components/blogContent'
 import P from '../../components/paragraph'
 import Follow from '../../components/followMe'
 import Tracker from '../../components/tracker'
+import Comments from '../../components/comments'
 
 let serialCodeString = `
  let numberOfTests = 5;
@@ -322,6 +323,7 @@ export default function Lighthouse() {
                     <li>Never do premature optimization for the sake of a high lighthouse score. Simple lazy loading of offscreen components to reduce javascript size in some cases can drastically reduce user experience so prefer caution while making such changes.</li>
                 </ol>
                 <Tracker id="100" name="After conclusion"/>
+                <Comments />
             </BlogContent>
             <Follow />
         </div>

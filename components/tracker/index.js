@@ -11,7 +11,7 @@ observer = new IntersectionObserver(([entry]) => {
                 event_label: entry.target.dataset.columns,
                 value: entry.target.id,
               })
-              observer.unobserve(event.target);
+              observer.unobserve(entry.target);
         }
     }
 }, {

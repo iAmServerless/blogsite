@@ -6,6 +6,7 @@ import BlogContent from '../../components/blogContent'
 import P from '../../components/paragraph'
 import Follow from '../../components/followMe'
 import Tracker from '../../components/tracker';
+import Comments from '../../components/comments';
 
 let title = "Optimize your DNS Resolution today, don't ignore the first thing that happens on the web | Ashutosh Sharma | Housing.com"
 let description = "DNS resolution is the first thing that happens on the web. Optimizing it can significantly reduce the DNS resolution latency. There are simple tricks to reduce latency like fixing your Time to Live(TTL), Playing with name servers, using CDN, etc."
@@ -137,6 +138,7 @@ export default function Dns() {
                 </ol>
                 <p><strong>Figure out appetite for performance at your organization and accordingly tune DNS settings.</strong></p>
                 <Tracker id="100" name="After conclusion"/>
+                <Comments />
             </BlogContent>
             <Follow />
         </div>)
