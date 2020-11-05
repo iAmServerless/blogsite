@@ -46,7 +46,7 @@ function ExperianceDetails({experiance}) {
 
 export default function Experiance() {
     return <div className={styles.container}>
-        <h1 className={`${styles.lightWhite} ${utilStyles.underline}`}>EXPERIANCE</h1>
+        <h1 className={`${styles.lightWhite} ${utilStyles.underline}`}>EXPERIENCE</h1>
         <div className={styles.cards}>
         <Masonry
         breakpointCols={breakpointColumnsObj}
