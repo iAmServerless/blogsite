@@ -2,27 +2,18 @@ import { useEffect } from "react"
 
 export default function() {
     useEffect(() => {
-        const script = document.getElementById('hcb').innerHTML;
-        window.eval(script);
+        window.gc_params = {
+            graphcomment_id: 'perf_blogs',
+            fixed_header_height: 0,
+          };
+          
+          (function() {
+            var gc = document.createElement('script'); gc.type = 'text/javascript'; gc.async = true;
+            gc.src = 'https://graphcomment.com/js/integration.js?' + Math.round(Math.random() * 1e8);
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(gc);
+          })();
     }, [])
     return (
-        <>
-        <div id="HCB_comment_box">
-            loading comments...
-        </div>
-        <link rel="stylesheet" type="text/css" href="https://www.htmlcommentbox.com/static/skins/bootstrap/twitter-bootstrap.css?v=0" />
-        <script
-            id="hcb"
-            dangerouslySetInnerHTML={{
-              __html: ` 
-              if(!window.hcb_user) {
-                  hcb_user={};
-              } 
-              (function() {
-                  var s=document.createElement("script"), l=hcb_user.PAGE || (""+window.location).replace(/'/g,"%27"), h="https://www.htmlcommentbox.com";s.setAttribute("type","text/javascript");s.setAttribute("src", h+"/jread?page="+encodeURIComponent(l).replace("+","%2B")+"&mod=%241%24wq1rdBcg%24f2s4VZdXQZRH.n0fJiAD1."+"&opts=16862&num=10&ts=1604568496577");if (typeof s!="undefined") document.getElementsByTagName("head")[0].appendChild(s);})();
-          `,
-            }}
-          />
-          </>
+        <div id="graphcomment"></div>
     )
 }
