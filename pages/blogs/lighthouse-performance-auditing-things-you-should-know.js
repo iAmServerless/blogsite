@@ -10,6 +10,7 @@ import P from '../../components/paragraph'
 import Follow from '../../components/followMe'
 import Tracker from '../../components/tracker'
 import Comments from '../../components/comments'
+import Link from 'next/link'
 
 let serialCodeString = `
  let numberOfTests = 5;
@@ -323,6 +324,9 @@ export default function Lighthouse() {
                     <li>Never do premature optimization for the sake of a high lighthouse score. Simple lazy loading of offscreen components to reduce javascript size in some cases can drastically reduce user experience so prefer caution while making such changes.</li>
                 </ol>
                 <Tracker id="100" name="After conclusion"/>
+                <div className={styles.linking}>
+                <Link href='/blogs/optimize-dns-resolution-for-fast-website'><a>DNS optimizations &rarr;</a></Link>
+                </div>
                 <Comments />
             </BlogContent>
             <Follow />

@@ -34,6 +34,15 @@
     filter: invert(1) drop-shadow(2px 4px 6px black);
 }
 
+.linking {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin: 40px 0;
+}
+
 @media only screen and (min-width: 768px) {
     .removePadding {
         padding: 0rem;

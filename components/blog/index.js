@@ -1,14 +1,6 @@
 import styles from './blog.module.css';
 import Link from 'next/link'
-import Masonry from 'react-masonry-css'
 import utilStyles from './../../styles/utils.module.css';
-
-
-const breakpointColumnsObj = {
-    1100: 1,
-    700: 1,
-    500: 1
-  };
 
   let blogs = [
     {
