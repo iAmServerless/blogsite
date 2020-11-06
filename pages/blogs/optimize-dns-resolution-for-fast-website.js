@@ -19,14 +19,14 @@ export default function Dns() {
                 <meta httpEquiv="content-type" content="text/html; charset=utf-8" />
                 <meta property="og:title" content={title} />
                 <meta property="og:description" content={description} />
-                <meta property="og:image" content="https://ashu.online/dns.jpeg" />
+                <meta property="og:image" content="https://ashu.online/fastdns.jpg" />
                 <meta property="og:url" content="https://ashu.online/blogs/optimize-dns-resolution-for-fast-website" />
                 <meta name="twitter:card" content="summary_large_image" />
                 <meta name="twitter:site" content="@ashuanindian" />
                 <meta name="twitter:creator" content="@ashuanindian" />
                 <meta name="twitter:title" content={title} />
                 <meta name="twitter:description" content={description} />
-                <meta name="twitter:image" content="https://ashu.online/dns.jpeg" />
+                <meta name="twitter:image" content="https://ashu.online/fastdns.jpg" />
                 <meta property="og:site_name" content="Ashutosh Sharma Blogs | ashu.online" />
                 <meta name="twitter:image:alt" content="DNS Performance optimization" />
                 <title>{title}</title>
