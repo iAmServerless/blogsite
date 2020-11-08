@@ -61,8 +61,8 @@ export default function Lighthouse() {
                 <meta property="og:image" content="https://ashu.online/lighthouse.png" />
                 <meta property="og:url" content="https://ashu.online/blogs/lighthouse-performance-auditing-things-you-should-know" />
                 <meta name="twitter:card" content="summary_large_image" />
-                <meta name="twitter:site" content="@ashuanindian" />
-                <meta name="twitter:creator" content="@ashuanindian" />
+                <meta name="twitter:site" content="@iamserverless" />
+                <meta name="twitter:creator" content="@iamserverless" />
                 <meta name="twitter:title" content={title} />
                 <meta name="twitter:description" content={description} />
                 <meta name="twitter:image" content="https://ashu.online/lighthouse.png" />

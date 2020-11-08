@@ -23,8 +23,8 @@ export default function Dns() {
                 <meta property="og:image" content="https://ashu.online/fastdns.jpg" />
                 <meta property="og:url" content="https://ashu.online/blogs/optimize-dns-resolution-for-fast-website" />
                 <meta name="twitter:card" content="summary_large_image" />
-                <meta name="twitter:site" content="@ashuanindian" />
-                <meta name="twitter:creator" content="@ashuanindian" />
+                <meta name="twitter:site" content="@iamserverless" />
+                <meta name="twitter:creator" content="@iamserverless" />
                 <meta name="twitter:title" content={title} />
                 <meta name="twitter:description" content={description} />
                 <meta name="twitter:image" content="https://ashu.online/fastdns.jpg" />
