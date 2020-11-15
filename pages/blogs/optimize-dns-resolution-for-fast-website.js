@@ -38,7 +38,7 @@ export default function Dns() {
                 <meta name="robots" content="index, follow" />
                 <link rel="canonical" href="https://ashu.online/blogs/optimize-dns-resolution-for-fast-website" />
             </Head>
-            <BlogTop imgSrc='/fastdns.jpg' alt='hero DNS resolution image in the background' heading="Optimize your DNS Resolution today, don't ignore the first thing that happens on the web" subHeading='Optimize the most common missed opportunity to keep an edge over your competitors.'/>
+            <BlogTop imgSrc='/fastdns.jpg' alt='hero DNS resolution image in the background' heading="DNS Resolution: Optimization Tools and Opportunities" subHeading=''/>
             <BlogContent>
                 <P>
                 DNS resolution is the first thing that happens when a request is made to a remote server. It is a process of finding the computer-friendly address of the remote server using a human-friendly domain name.
