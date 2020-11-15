@@ -40,6 +40,10 @@
     margin: 40px 0;
 }
 
+.center {
+    text-align: center;
+}
+
 @media only screen and (min-width: 768px) {
     .removePadding {
         padding: 0rem;
