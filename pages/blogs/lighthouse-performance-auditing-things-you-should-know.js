@@ -82,7 +82,7 @@ export default function Lighthouse() {
                 <P>
                 When someone starts looking for optimizing the performance of their web application they immediately come across this tool called lighthouse by Google.</P>
                 <P>
-                Google lighthouse is an awesome tool to find out the performance issues in your web application and list down all the actionable items. This list helps you fix the issues and see the green color performance score on your Google lighthouse report. 
+                Google lighthouse is an awesome tool to find out the performance issues in your web application and list down all the action items. This list helps you fix the issues and see the green color performance score on your Google lighthouse report. 
                 </P>
                 <P>With time Google lighthouse has become a defacto standard for web performance measurement. Google is pushing it everywhere from chrome dev tools to browser extensions, page speed insight to web.dev, and even webmaster search console. Anywhere if you talk about performance you will see the Google lighthouse auditing tool.</P>
                 <P>
