@@ -12,7 +12,6 @@ import Tracker from '../../components/tracker'
 import Comments from '../../components/comments'
 import Link from 'next/link'
 import Author from '../../components/author'
-import style from 'react-syntax-highlighter/dist/esm/styles/hljs/agate';
 
 let serialCodeString = `
  let numberOfTests = 5;
