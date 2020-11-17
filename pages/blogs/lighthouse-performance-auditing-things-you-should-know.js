@@ -274,7 +274,7 @@ export default function Lighthouse() {
                 </P>
                 <h3 className={utilStyle.gradient2} id="page-interactivity">Page Interactivity (TBT, TTI)</h3>
                 <P>
-                Google Lighthouse recommends reducing your Javascript, CSS size as much as possible. Javascript or CSS execution can choke the main thread and CPU will be unavailable for more important stuff like handling user interaction. This is a fair idea and most people understand the limitation of js being single-threaded.
+                Google Lighthouse recommends reducing your Javascript and CSS size as much as possible. Javascript or CSS execution can choke the main thread and CPU will be unavailable for more important stuff like handling user interaction. This is a fair idea and most people understand the limitation of js being single-threaded.
                 </P>
                 <P>
                 But Google took the wrong path here. In the upcoming version, the Google lighthouse will start suggesting the replacement of larger libraries with their smaller counterparts. There are multiple problems with this approach.
