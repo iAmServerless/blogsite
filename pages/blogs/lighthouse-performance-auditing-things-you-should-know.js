@@ -76,7 +76,7 @@ export default function Lighthouse() {
                 <meta name="robots" content="index, follow" />
                 <link rel="canonical" href="https://ashu.online/blogs/lighthouse-performance-auditing-things-you-should-know" />
             </Head>
-            <BlogTop imgSrc='/lighthouse.png' alt='hero lighthouse score image in background' heading='Lighthouse: Expectation vs. Reality' subHeading='Make an informative decision before picking another optimization suggestion'/>
+            <BlogTop imgSrc='/lighthouse.png' alt='hero lighthouse score image in background' heading='Google Lighthouse: Expectation vs. Reality' subHeading='Make an informative decision before picking another optimization suggestion'/>
             <BlogContent>
                 <P>
                 When someone starts looking for optimizing the performance of their web application they immediately come across this tool called lighthouse by Google.</P>
