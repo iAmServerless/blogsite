@@ -144,7 +144,7 @@ export default function Lighthouse() {
                 <P>
                 Below are the Google lighthouse scores on the same machine when it is executed 5 times for housing.com once serially and once in parallel. When executed serially results are completely different than when run in parallel. 
                 </P>
-                <P>Operating system distributes the cpu cycle among 5 process when running in parallel. During serial execution all available cpu cycles were utilised by a single process.</P>
+                <P>Operating system distributes the cpu cycle among 5 process when running in parallel. During serial execution all available cpu cycles were utilized by a single process.</P>
                 <h4 className={utilStyle.gradient2}>When the Google lighthouse is executed 5 times on the housing home page serially.</h4>
                 <SyntaxHighlighter language="javascript" style={dark} customStyle={{ fontSize: '16px' }}>
                     {serialCodeString}
