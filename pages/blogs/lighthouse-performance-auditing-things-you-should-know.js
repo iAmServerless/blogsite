@@ -228,7 +228,7 @@ export default function Lighthouse() {
                 Web vitals are core performance metrics provided by chrome performance API and have a clear mapping with the Google lighthouse. It is used to track field data. Send data tracked to GA or any other tool you use for that sake. We are using perfume.js as it provides more metrics we are interested in along with all metrics supported by web vitals.
                 </P>
                 <P>
-                This is the most consistent and reliable among all the other approaches as It is the average performance score of your entire user base. We are able to make huge progress in optimizing our application by validating this data.
+                This is the most consistent and reliable among all the other approaches as It is the average performance score of your entire user base. We can make huge progress in optimizing our application by validating this data.
                 </P>
                 <br />
                 <img className={`${styles.image} ${styles.perf_matrics}`} src="/metrics.png" alt="performance metrics tracked at housing" />
