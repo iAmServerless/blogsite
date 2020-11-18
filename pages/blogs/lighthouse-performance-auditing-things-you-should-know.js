@@ -122,7 +122,7 @@ export default function Lighthouse() {
                 <P>
                 Google lighthouse has made it very easy to generate your site performance report. Open your site, go to dev-tools click Audit Tab, and run the test. Boom you got the results. But wait can you trust the score you got, the answer to this is a big no.
                 </P>
-                <P>Your results vary a lot when they are executed on a high-end machine vs when executed on a low-end machine because of different available CPU cycles to the Google lighthouse process. You can check the CPU/Memory power available to the Google lighthouse process during the test at the bottom of thes report.</P>
+                <P>Your results vary a lot when they are executed on a high-end machine vs when executed on a low-end machine because of different available CPU cycles to the Google lighthouse process. You can check the CPU/Memory power available to the Google lighthouse process during the test at the bottom of this report.</P>
                 <br />
                 <img className={`${styles.image} ${styles.lighthouse_meta_data}`} src="/lighthouse_screen_shot.png" alt="lighthouse meta data" />
                 <P>
@@ -137,7 +137,7 @@ export default function Lighthouse() {
                 <P>
                 It means everything on intel i7 or any other higher-end processor will be executed faster and will result in much better scores.
                 </P>
-                <P>One of the critical matrices in the Google lighthouse is TBT (Total Blocking Time) which depends on CPU availability. High CPU availability ensures a fewer number of long tasks (tasks which take more than 50ms). Less the number of long tasks lower is the TBT value and higher is the performance score.
+                <P>One of the critical matrices in the Google lighthouse is TBT (Total Blocking Time) which depends on CPU availability. High CPU availability ensures a fewer number of long tasks (tasks that take more than 50ms). Less the number of long tasks lower is the TBT value and higher is the performance score.
 </P>
                 <P>This is not the only problem, Google lighthouse scores can differ between multiple executions on the same machine. This is because Google lighthouse or in fact any application cannot control the CPU cycles as this is the job of the operating system. The operating system decides which process will get how many computation cycles. It can reduce or increase CPU availability based on many factors like CPU temperature, other high priority tasks, etc.
                 </P>
@@ -183,12 +183,12 @@ export default function Lighthouse() {
                   If you will open the dev tools when Gmail is loading you might get a heart attack seeing the number of requests it makes to its servers. Calendar, Chat, Peak, etc. adds too much to its application payload but Gmail’s entire focus is on emails. Google Lighthouse fails to understand that and gives a very pathetic score to Gmail applications.
                 </P>
                 <P>
-                There are many similar applications like Twitter, revamped version of Facebook. Performance is one core metrics for these websites but they all fail to impress Google lighthouse.
+                There are many similar applications like Twitter, a revamped version of Facebook. Performance is one core metric for these websites but they all fail to impress Google lighthouse.
                 </P>
                 <P>
                 All these companies have some of the best brains who very well understand the limitations of the tool. They know what to fix and what aspects to be ignored from Google lighthouse suggestions. The problem is with organizations that do not have resources and time to explore and understand these limitations.
                 </P>
-                <P>Search google for “perfect lighthouse score” and you will find 100’s of articles explaining how to achieve 100 on the Google lighthouse. Most of them have never checked other critical metrics like conversion or Bounce rate.</P>
+                <P>Search google for “perfect lighthouse score” and you will find hundred articles explaining how to achieve 100 on the Google lighthouse. Most of them have never checked other critical metrics like conversion or Bounce rate.</P>
                 <P>
                 The only solution to this issue is to measure more and regularly. Define core metrics your organization is concerned about and prioritize them properly. Performance has no meaning if it is at the cost of your core metrics like conversion.
                 </P>
@@ -199,7 +199,7 @@ export default function Lighthouse() {
                 </P>
                 <h3 className={utilStyle.gradient2} id="using-hoisted-service">A) Using hoisted services</h3>
                 <P>
-                    Cloud services are again an awesome way to test your site quickly and get a basic performance idea. Some of the google implementations like page speed insight tries to limit the inconsistency by including Google lighthouse lab data and field data (google tracks the performance score of all sites you visit if you allow Google to sync your history). Webpagetest queue the test request to control CPU cycles.
+                Cloud services are again an awesome way to test your site quickly and get a basic performance idea. Some of the google implementations like page speed insight tries to limit the inconsistency by including Google lighthouse lab data and field data (google tracks the performance score of all sites you visit if you allow Google to sync your history). Webpagetest queues the test request to control CPU cycles.
                 </P>
                 <P>But again they also have their own limitations.</P>
                 <ul>
@@ -213,7 +213,7 @@ export default function Lighthouse() {
                         Services need to have servers all around the world (webpagetest already has this feature) to understand the latency behavior in your target location.
                     </li>
                 </ul>
-                <P>You will be amazed by seeing the delta between smallest and largest of ten test runs of a single page on web.dev. Prefer to take the median of all results or remove the outliers and take avg of the remaining tests.</P>
+                <P>You will be amazed by seeing the delta between the smallest and largest of ten test runs of a single page on web.dev. Prefer to take the median of all results or remove the outliers and take avg of the remaining tests.</P>
                 <h3 className={utilStyle.gradient2} id="self-hoisted-lighthouse-instance">B) Self hoisted Google lighthouse instance</h3>
                 <P>
                     Google lighthouse team has again done a great job here by providing a CI layer for self hoisting. The product is <a href="https://github.com/GoogleChrome/lighthouse-ci" target="_blank" rel="noopener noreferrer nofollow">lighthouse CI</a>.</P>
@@ -267,14 +267,14 @@ export default function Lighthouse() {
                 Google Lighthouse suggests optimizing images by using modern image formats such as webp or avif and also resizing them to the dimension of the image container. This is a very cool optimization and can have a huge impact on your LCP score. You can enhance it further by preloading first fold images.
                 </P>
                 <P>
-                To build a system where images are resized on the fly or pre resized to many possible dimensions on upload is a tedious task. In both ways, depending upon your scale you might need to take a huge infra burden that needs to be maintained and also invest.
+                To build a system where images are resized on the fly or pre resized in many possible dimensions on upload is a tedious task. In both ways, depending upon your scale you might need to take a huge infra burden that needs to be maintained and also invest.
                 </P>
                 <P>
                 A better approach is to implement it on a single page for a limited image and track your most critical metrics like conversion, bounce rate, etc. And if you are really happy with the ROI then take it to live for all of your images.
                 </P>
                 <h3 className={utilStyle.gradient2} id="page-interactivity">Page Interactivity (TBT, TTI)</h3>
                 <P>
-                Google Lighthouse recommends reducing your Javascript and CSS size as much as possible. Javascript or CSS execution can choke the main thread and CPU will be unavailable for more important stuff like handling user interaction. This is a fair idea and most people understand the limitation of js being single-threaded.
+                Google Lighthouse recommends reducing your Javascript and CSS size as much as possible. Javascript or CSS execution can choke the main thread and the CPU will be unavailable for more important stuff like handling user interaction. This is a fair idea and most people understand the limitation of js being single-threaded.
                 </P>
                 <P>
                 But Google took the wrong path here. In the upcoming version, the Google lighthouse will start suggesting the replacement of larger libraries with their smaller counterparts. There are multiple problems with this approach.
@@ -314,12 +314,12 @@ export default function Lighthouse() {
                 </P>
                 <P>Let a website want to promote app downloads to users who have already not installed the app. Chrome has added support to detect if your app is already installed on the device(using getInstalledRelatedApps API) but this information is not available to the server on the first request.
 </P>
-<P>What the server can do is make a guess and decide if it needs to append the app download banner on the page or not. If the server decides to add it and the app is already present on the device, the Download banner needs to be removed from the page and similarly when the server decides to not include the download banner and the app is already not installed on the device it will be appended to the DOM on the client which will trigger Cumulative layout shift(CLS).</P>
+<P>What the server can do is make a guess and decide if it needs to append the app download banner on the page or not. If the server decides to add it and the app is already present on the device, the Download banner needs to be removed from the page, and similarly when the server decides to not include the download banner and the app is already not installed on the device it will be appended to the DOM on the client which will trigger Cumulative layout shift(CLS).</P>
                 <P>
                 To avoid CLS you will remove the banner from the main layer of the page and show it as a modal, floating element or find some other way to show it, but what if you get maximum downloads when the banner is part of your page. Where will you compromise?
                 </P>
                 <P>
-                On a funny note, Most of the people have already experienced CLS on the google search result page.
+                On a funny note, Most people have already experienced CLS on the google search result page.
                 </P>
                 <br />
                 <P>
@@ -336,7 +336,7 @@ export default function Lighthouse() {
 </li>
                     <li>Using cloud solutions like web.dev is a better solution to get consistent results than running a Google lighthouse on your local machine.</li>
                     <li>Running self hoisted service is better than cloud solutions because results in cloud solutions can get inconsistent based on the amount of traffic they are handling. Also, Google lighthouse settings can be better manipulated in a self-hosted environment.</li>
-                    <li>A self-hosted environment requires expertise and time because of limited resources and documentation but is very scalable and integrates very well with most popular CI providers.</li>
+                    <li>A self-hosted environment requires expertise and time because of limited resources and documentation but is very scalable and integrates very well with the most popular CI providers.</li>
                     <li>Tracking real user data is the most reliable approach to track web performance. Google web vital or perfume.js is some of the lovely libraries to track real user data.</li>
                     <li>Define critical metrics to your website like conversion, bounce rate, user experience, etc. Plan any optimization suggestion from the Google lighthouse after tracking the impact of it on your critical metrics.</li>
                     <li>Never do premature optimization for the sake of a high Google lighthouse score. Simple lazy loading of offscreen components to reduce javascript size in some cases can reduce user experience so prefer caution while making such changes.</li>
