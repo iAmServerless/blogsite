@@ -85,7 +85,7 @@ export default function Lighthouse() {
                 </P>
                 <P>With time Google lighthouse has become a defacto standard for web performance measurement. Google is pushing it everywhere from chrome dev tools to browser extensions, page speed insight to web.dev, and even webmaster search console. Anywhere if you talk about performance you will see the Google lighthouse auditing tool.</P>
                 <P>
-                This article will cover the usage of the Google lighthouse, its strengths and weaknesses. Where to trust it and where to not. Google has advertised all the benefits of the tools and integrated it in all of its other major tools like search console, page speed insight, and web.dev. This forces people to improve their score sometime at the cost of something important. 
+                This article will cover the usage of Google lighthouse, its strengths, and its weaknesses. Where to trust it and where to not. Google has advertised all the benefits of the tools and integrated it in all of its other major tools like search console, page speed insight, and web.dev. This forces people to improve their score sometimes at the cost of something important. 
                 </P>
                 <P>
                 Many teams do weird things to see green ticks in their Google lighthouse report without knowing the exact impact of it on their conversion and usability.</P>
@@ -126,7 +126,7 @@ export default function Lighthouse() {
                 <br />
                 <img className={`${styles.image} ${styles.lighthouse_meta_data}`} src="/lighthouse_screen_shot.png" alt="lighthouse meta data" />
                 <P>
-                The Google lighthouse team has done a great job in throttling the cpu to bring computation cycles down to an average of most used devices like MOTO G4 or Nexus 5X. But on a very high-end machine like new fancy MacBook Pro throttling CPU cycles does not drop CPU cycles to the desired level.
+                The Google lighthouse team has done a great job in throttling the cpu to bring computation cycles down to an average of most used devices like MOTO G4 or Nexus 5X. But on a very high-end machine like the new fancy MacBook Pro throttling CPU cycles does not drop CPU cycles to the desired level.
                 </P>
                 <h4>For example</h4>
                 <Tracker id="25" name="After For example"/>
@@ -144,7 +144,7 @@ export default function Lighthouse() {
                 <P>
                 Below are the Google lighthouse scores on the same machine when it is executed 5 times for housing.com once serially and once in parallel. When executed serially results are completely different than when run in parallel. 
                 </P>
-                <P>Operating system distributes the cpu cycle among 5 process when running in parallel. During serial execution all available cpu cycles were utilized by a single process.</P>
+                <P>The operating system distributes the cpu cycle among 5 processes when running in parallel. During serial execution, all available cpu cycles were utilized by a single process.</P>
                 <h4 className={utilStyle.gradient2}>When the Google lighthouse is executed 5 times on the housing home page serially.</h4>
                 <SyntaxHighlighter language="javascript" style={dark} customStyle={{ fontSize: '16px' }}>
                     {serialCodeString}
@@ -188,7 +188,7 @@ export default function Lighthouse() {
                 <P>
                 All these companies have some of the best brains who very well understand the limitations of the tool. They know what to fix and what aspects to be ignored from Google lighthouse suggestions. The problem is with organizations that do not have resources and time to explore and understand these limitations.
                 </P>
-                <P>Search google for “perfect lighthouse score” and you will find hundred articles explaining how to achieve 100 on the Google lighthouse. Most of them have never checked other critical metrics like conversion or Bounce rate.</P>
+                <P>Search google for “perfect lighthouse score” and you will find a hundred articles explaining how to achieve 100 on the Google lighthouse. Most of them have never checked other critical metrics like conversion or Bounce rate.</P>
                 <P>
                 The only solution to this issue is to measure more and regularly. Define core metrics your organization is concerned about and prioritize them properly. Performance has no meaning if it is at the cost of your core metrics like conversion.
                 </P>
@@ -294,7 +294,7 @@ export default function Lighthouse() {
                     </li>
                     <li>
                         <P>
-                        Google itself does not follow rules created by themselves. Most of the google products load way too much of Javascript.
+                        Google itself does not follow rules created by themselves. Most of the google products load way too much Javascript.
                          <br /> <br />
                          A company which has the best resources around the world has never focused on their own lighthouse score but wants the entire world to take it seriously. There seems to be some hidden agenda of Google behind this like faster the web better is their ad revenue.
                         </P>
