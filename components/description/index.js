@@ -39,7 +39,7 @@ export default function Description() {
             <div className={styles.headingTop}>Welcome I'M</div>
             <h1 className={`${utilStyles.heading2Xl}`}>ASHUTOSH SHARMA</h1>
             <h2 className={`${utilStyles.headingLg}`}>Web Developer & Frontend Architect</h2>
-            <p className={`${styles.description}`}>I hate my code written two month back.</p>
+            <p className={`${styles.description}`}>I hate my code written two months back.</p>
         </div>
     </div>
 
