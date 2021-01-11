@@ -44,9 +44,16 @@
     text-align: center;
 }
 
+.http3Style {
+    height: 200px;
+}
+
 @media only screen and (min-width: 768px) {
     .removePadding {
         padding: 0rem;
+    }
+    .http3Style {
+        height: auto;
     }
     .lighthouse_meta_data {
         width: 100%;

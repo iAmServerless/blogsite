@@ -142,7 +142,7 @@ export default function Dns() {
                 <Tracker id="100" name="After conclusion"/>
                 <Author link="/" heading="WRITTEN BY" author="Ashutosh Sharma" description="Engineering Manager @ Housing.com. I love learning and teaching. Web performance enthusiast."/>
                 <div className={styles.linking}>
-                    <Link href='/blogs/lighthouse-performance-auditing-things-you-should-know'><a>Lighthouse: Expectation vs. Reality &rarr;</a></Link>
+                    <Link href='/blogs/optimize-website-connection-speed-in-2021'><a>Network Connection Optimization &rarr;</a></Link>
                 </div>
                 <Comments />
             </BlogContent>

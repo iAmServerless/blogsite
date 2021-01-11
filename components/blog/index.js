@@ -4,9 +4,15 @@ import utilStyles from './../../styles/utils.module.css';
 
   let blogs = [
     {
-        title: "Optimize your DNS Resolution today, don't ignore the first thing that happens on the web",
+        title: "How to improve website connection speed in 2021",
         author: 'Ashutosh Sharma',
-        description: 'Optimize the most common missed opportunity to keep an edge over your competitors.',
+        description: 'Optimize your website connection speed with HTTP/3, TLS 1.3, ECC Certificates, OCSP Stapling, etc',
+        url: '/blogs/optimize-website-connection-speed-in-2021'
+    },
+    {
+        title: "DNS Resolution: Optimization Tools and Opportunities",
+        author: 'Ashutosh Sharma',
+        description: 'DNS resolution is the first thing that happens when a request is made to a remote server. Find ways to optimize your sites dns resolution',
         url: '/blogs/optimize-dns-resolution-for-fast-website'
     },
     {
