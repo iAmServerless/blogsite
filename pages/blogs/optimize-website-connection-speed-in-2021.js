@@ -41,7 +41,7 @@ export default function Connection() {
             <BlogTop imgSrc='/headoflineblocking.jpg' alt='http2 vs http3 connection image' heading="How to improve your website connection speed in 2021" subHeading=''/>
             <BlogContent>
                 <P>
-                Out of many performance metrics, one which matters the most is Time To First Byte (TTFB). If TTFB is worse than it is guaranteed to be a poor performing website.
+                Out of many performance metrics, one which matters the most is Time To First Byte (TTFB). If TTFB is worse, then it is guaranteed to be a poor performing website.
                 </P>
                 <P>
                 TTFB depends upon many factors. One very critical factor is server connection which happens after DNS resolution. I will discuss how to optimize server connection speed in this article.
@@ -64,7 +64,7 @@ export default function Connection() {
                 <P>Transport Layer Security(TLS) is an encryption protocol used to encrypt and decrypt data over HTTP protocol. Both HTTP and TLS have come a long way to provide more secure and performant server connections.</P>
                 <h3>TLS 1.2 vs TLS 1.3</h3>
                 <P>TLS 1.2 which was released in 2008 has served the web for a very long time. It has few security and performance issues which were taken care of in the new shiny TLS 1.3.</P>
-                <P>TLS 1.3 is well supported in all major browsers and as per caniuse data, more than 90% of the users have TLS 1.3 support.</P>
+                <P>TLS 1.3 is well supported in all major browsers and as per <a href="https://caniuse.com/tls1-3">caniuse.com</a> data, more than 90% of the users have TLS 1.3 support.</P>
                 <P>TLS 1.3 comes with lots of improvements from its previous versions. It dropped support for many weaker encryption algorithms. Tries to achieve perfect forward secrecy, which is a process of changing key for each session so that a compromised key will not affect other sessions.</P>
                 <P>For performance, TLS 1.3 made two major changes over TLS 1.2</P>
                 <ul>
@@ -82,14 +82,14 @@ export default function Connection() {
                 <Tracker id="50" name="how to make the most out of http2"/>
                 <h3>How to make the most out of HTTP/2</h3>
                 <P>HTTP/2 was a major upgrade over its previous version. It has many optimization features that can significantly boost web performance.</P>
-                <P>The major focus on HTTP/2 design was to make full use of available network bandwidth. It multiplex requests on a single connection. Browsers limit around the number of parallel requests on a domain is not valid on HTTP/2. There is no need to create many domains to bypass browser restrictions on parallel requests on a single domain.</P>
+                <P>The major focus on HTTP/2 design was to make full use of available network bandwidth. It multiplexes requests on a single connection. Browser's limit around the number of parallel requests on a domain is not valid on HTTP/2. There is no need to create multiple domains to bypass browser restrictions on parallel requests on a single domain.</P>
                 <P>HTTP/2 released server push where the server can send multiple responses for a single request. It was a great idea as in most cases webpages are aware of what will be the next request. Server push has the limitation that it is not aware of browser cache and can send data even when It can be served from the browser cache. There are workarounds but they are not very reliable and tough to put in place.</P>
                 <P>Server push was not very well adopted because of its limitations. In November 2020 browsers and servers planned to remove support for server push.</P>
                 <P>By enabling HTTP/2 most of its features are out of the box available without doing anything.</P>
                 <ol>
                     <b><li>One connection per domain</li></b>
                 </ol>
-                <P>In HTTP/2 messages are broken into frames and send over the network stream. This makes multiplexing of requests possible on a single domain. This means only one connection is required for a domain to transfer all data.</P>
+                <P>In HTTP/2 messages are broken into frames and sent over the network stream. This makes multiplexing of requests possible on a single domain. This means only one connection is required for a domain to transfer all data.</P>
                 <P>The above statement is not fully correct. There are edge cases where multiple connections are required on the same domain. HTTP/2 session reuse does not happen across credentialed and uncredentialed requests. Fonts will always create a new connection as they are downloaded as an uncredentialed request.</P>
                 <ol>
                     <b><li>Headers compression</li></b>
