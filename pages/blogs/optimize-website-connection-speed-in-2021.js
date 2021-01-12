@@ -64,7 +64,7 @@ export default function Connection() {
                 <P>Transport Layer Security(TLS) is an encryption protocol used to encrypt and decrypt data over HTTP protocol. Both HTTP and TLS have come a long way to provide more secure and performant server connections.</P>
                 <h3>TLS 1.2 vs TLS 1.3</h3>
                 <P>TLS 1.2 which was released in 2008 has served the web for a very long time. It has few security and performance issues which were taken care of in the new shiny TLS 1.3.</P>
-                <P>TLS 1.3 is well supported in all major browsers and as per <a href="https://caniuse.com/tls1-3">caniuse.com</a> data, more than 90% of the users have TLS 1.3 support.</P>
+                <P>TLS 1.3 is well supported in all major browsers and as per <a href="https://caniuse.com/tls1-3" target="_blank" rel="noopener noreferrer">caniuse.com</a> data, more than 90% of the users have TLS 1.3 support.</P>
                 <P>TLS 1.3 comes with lots of improvements from its previous versions. It dropped support for many weaker encryption algorithms. Tries to achieve perfect forward secrecy, which is a process of changing key for each session so that a compromised key will not affect other sessions.</P>
                 <P>For performance, TLS 1.3 made two major changes over TLS 1.2</P>
                 <ul>
