@@ -1,6 +1,5 @@
 .container {
     display: grid;
-    content-visibility: auto;
     grid-template-columns: 1fr;
     background: #422662;
     padding: 0 1.2rem;
@@ -15,6 +14,7 @@
 
 .headingTop {
     color: #ddd;
+    font-size: 24px;
 }
 
 .animation {

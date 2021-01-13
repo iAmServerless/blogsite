@@ -17,7 +17,6 @@ export default function Contact() {
         <style jsx>{`
             .container {
                 padding: 0 4rem;
-                content-visibility: auto;
             }
             a,
             .button{
