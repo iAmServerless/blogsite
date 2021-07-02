@@ -1,6 +1,4 @@
 import styles from './project.module.css';
-import Masonry from 'react-masonry-css'
-import Link from 'next/link'
 import utilStyles from './../../styles/utils.module.css';
 
 const breakpointColumnsObj = {
@@ -55,17 +53,13 @@ export default function Projects() {
     return <div className={styles.container}>
         <h1 className={`${utilStyles.headingXl} ${utilStyles.fadeBlack} ${utilStyles.underline}`}>Projects</h1>
         <div className={styles.cards}>
-        <Masonry
-        breakpointCols={breakpointColumnsObj}
-        className={styles['my-masonry-grid']}
-        columnClassName={styles['my-masonry-grid_column']}
-         >
+        
             {
                 projects.map((project, i) => {
                      return  <ProjectCard key={i} project={project}/>
                 })
             }
-            </Masonry>
+            
         </div>
     </div>
 

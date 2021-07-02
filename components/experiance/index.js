@@ -1,13 +1,5 @@
 import styles from './experiance.module.css';
-import Masonry from 'react-masonry-css'
 import utilStyles from './../../styles/utils.module.css';
-
-
-const breakpointColumnsObj = {
-    1100: 1,
-    700: 1,
-    500: 1
-  };
 
   let experiances = [
     {
@@ -48,17 +40,11 @@ export default function Experiance() {
     return <div className={styles.container}>
         <h1 className={`${styles.lightWhite} ${utilStyles.underline}`}>EXPERIENCE</h1>
         <div className={styles.cards}>
-        <Masonry
-        breakpointCols={breakpointColumnsObj}
-        className={styles['my-masonry-grid']}
-        columnClassName={styles['my-masonry-grid_column']}
-         >
             {
                 experiances.map((experiance, i) => {
                     return <ExperianceDetails key={i} experiance={experiance}/>
                 })
             }
-        </Masonry>
         </div>
     </div>
 
