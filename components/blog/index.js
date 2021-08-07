@@ -16,7 +16,7 @@ import utilStyles from './../../styles/utils.module.css';
         url: '/blogs/optimize-dns-resolution-for-fast-website'
     },
     {
-          title: 'Lighthouse: Expectations vs. Reality',
+          title: 'The Truth of Google Lighthouse Performance',
           author: 'Ashutosh Sharma',
           description: 'Your core metrics may not have a direct correlation with lighthouse scores.',
           url: '/blogs/lighthouse-performance-auditing-things-you-should-know'
