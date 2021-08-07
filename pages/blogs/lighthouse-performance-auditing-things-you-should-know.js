@@ -48,7 +48,7 @@ exec(\`node \${lighthouseCli}
 }
 `
 
-let title = "Google Lighthouse: Expectation vs. Reality | Ashutosh Sharma | Housing.com"
+let title = "The Truth of Google Lighthouse Performance | Ashutosh Sharma | Housing.com"
 let description = "Google Lighthouse is amazing web perf audit tool but it has it's own limits. Any action you plan based on suggestions from Google lighthouse report needs through understanding of how it will impact your web application. Improving Google lighthouse score can improve your core matrics like conversion but sometime can decrease your product quality. In this article learn to avoid suggestion when you should"
 
 export default function Lighthouse() {
@@ -84,7 +84,7 @@ export default function Lighthouse() {
                 <meta name="robots" content="index, follow" />
                 <link rel="canonical" href="https://ashu.online/blogs/lighthouse-performance-auditing-things-you-should-know" />
             </Head>
-            <BlogTop imgSrc='/lighthouse.png' alt='hero lighthouse score image in background' heading='Google Lighthouse: Expectation vs. Reality' subHeading='Make an informative decision before picking another optimization suggestion'/>
+            <BlogTop imgSrc='/lighthouse.png' alt='hero lighthouse score image in background' heading='The Truth of Google Lighthouse Performance' subHeading='Make an informative decision before picking another optimization suggestion'/>
             <BlogContent>
                 <P>
                 When someone starts looking for optimizing the performance of their web application they immediately come across this tool called lighthouse by Google.</P>
