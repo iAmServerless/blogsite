@@ -15,6 +15,7 @@ export default function Home() {
   return (
     <Layout>
       <Head>
+        <html lang='en' />
         <meta charSet="utf-8" />
         <meta httpEquiv="content-type" content="text/html; charset=utf-8"></meta>
         <meta property="og:title" content={title} />
