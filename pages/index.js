@@ -24,6 +24,7 @@ export default function Home() {
         <meta property="og:url" content="https://ashu.online/blogs/optimize-dns-resolution-for-fast-website" />
         <title>{title}</title>
         <meta name="description" content={description} />
+        <link rel="preload" as="image" href="/ashutosh.jpeg" />
         <meta name="keywords" content="Ashutosh Sharma, Frontend Architect, Frontend performance, React, Javascript" />
         <link rel="icon" href="/favicon.ico" />
         <meta name="robots" content="index, follow" />
