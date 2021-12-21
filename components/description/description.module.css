@@ -6,9 +6,8 @@
 .details {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
     padding: 2rem 1rem;
-    flex-direction: row;
+    flex-direction: column;
 }
 
 .headingTop {
@@ -18,8 +17,9 @@
 
 .resume {
     display: block;
-    width: 100%;
-    color: #49ff00;
+    width: 200px;
+    color: white;
+    border: 1px solid;
 }
 
 .animation {
@@ -44,6 +44,7 @@
         letter-spacing: 1px;
         font-size: 1.2rem;
         line-height: 2rem;
+        width: 100%;
     }
     .animation {
         background: url(/ashutosh.jpeg);
