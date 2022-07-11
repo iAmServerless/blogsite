@@ -8,6 +8,7 @@
     flex-wrap: wrap;
     padding: 2rem 1rem;
     flex-direction: column;
+    justify-content: center;
 }
 
 .headingTop {
@@ -24,7 +25,6 @@
 }
 
 .animation {
-    background: url(/ashutosh.jpeg);
     background-size: cover;
     background-position: center;
     min-height: 250px;
@@ -48,13 +48,12 @@
         width: 100%;
     }
     .animation {
-        background: url(/ashutosh.jpeg);
+        padding: 4rem 2rem;
         background-size: cover;
         background-position: center;
     }
     .details {
         padding: 1rem;
-        max-height: 500px;
         min-height: 450px;
         padding: 4rem 2rem;
 ;
