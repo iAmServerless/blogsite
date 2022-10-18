@@ -21,8 +21,8 @@ export default function Dns() {
                 <meta httpEquiv="content-type" content="text/html; charset=utf-8" />
                 <meta property="og:title" content={title} />
                 <meta property="og:description" content={description} />
-                <meta property="og:image" content="https://ashu.online/fastdns.jpg" />
-                <meta property="og:url" content="https://ashu.online/blogs/optimize-dns-resolution-for-fast-website" />
+                <meta property="og:image" content="https://ashutosharma.com/fastdns.jpg" />
+                <meta property="og:url" content="https://ashutosharma.com/blogs/optimize-dns-resolution-for-fast-website" />
                 <meta property="og:locale" content="en_US" />
                 <meta property="og:type" content="article" />
                 <meta property="article:published_time" content="2020-12-11T19:00:00+00:00" />
@@ -36,15 +36,15 @@ export default function Dns() {
                 <meta name="twitter:creator" content="@iamserverless" />
                 <meta name="twitter:title" content={title} />
                 <meta name="twitter:description" content={description} />
-                <meta name="twitter:image" content="https://ashu.online/fastdns.jpg" />
-                <meta property="og:site_name" content="Ashutosh Sharma Blogs | ashu.online" />
+                <meta name="twitter:image" content="https://ashutosharma.com/fastdns.jpg" />
+                <meta property="og:site_name" content="Ashutosh Sharma Blogs | ashutosharma.com" />
                 <meta name="twitter:image:alt" content="DNS Performance optimization" />
                 <title>{title}</title>
                 <meta name="description" content={description} />
                 <meta name="keywords" content="dns resolution, Time to Live (TTL), A record, AAAA record, CNAME record, route53, custom name server, CDN, root servers, authoritative name servers" />
                 <link rel="icon" href="/favicon.ico" />
                 <meta name="robots" content="index, follow" />
-                <link rel="canonical" href="https://ashu.online/blogs/optimize-dns-resolution-for-fast-website" />
+                <link rel="canonical" href="https://ashutosharma.com/blogs/optimize-dns-resolution-for-fast-website" />
             </Head>
             <BlogTop imgSrc='/fastdns.jpg' alt='hero DNS resolution image in the background' heading="DNS Resolution: Optimization Tools and Opportunities" subHeading=''/>
             <BlogContent>

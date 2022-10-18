@@ -20,15 +20,15 @@ export default function Home() {
         <meta httpEquiv="content-type" content="text/html; charset=utf-8"></meta>
         <meta property="og:title" content={title} />
         <meta property="og:description" content={description} />
-        <meta property="og:image" content="https://ashu.online/profile.png" />
-        <meta property="og:url" content="https://ashu.online/blogs/optimize-dns-resolution-for-fast-website" />
+        <meta property="og:image" content="https://ashutosharma.com/profile.png" />
+        <meta property="og:url" content="https://ashutosharma.com/blogs/optimize-dns-resolution-for-fast-website" />
         <title>{title}</title>
         <meta name="description" content={description} />
         <link rel="preload" as="image" href="/ashutosh.jpeg" />
         <meta name="keywords" content="Ashutosh Sharma, Frontend Architect, Frontend performance, React, Javascript" />
         <link rel="icon" href="/favicon.ico" />
         <meta name="robots" content="index, follow" />
-        <link rel="canonical" href="https://ashu.online/" />
+        <link rel="canonical" href="https://ashutosharma.com/" />
       </Head>
       <Description />
       <Blogs />

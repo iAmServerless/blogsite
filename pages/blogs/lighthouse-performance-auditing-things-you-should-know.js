@@ -59,8 +59,8 @@ export default function Lighthouse() {
                 <meta httpEquiv="content-type" content="text/html; charset=utf-8" />
                 <meta property="og:title" content={title} />
                 <meta property="og:description" content={description} />
-                <meta property="og:image" content="https://ashu.online/lighthouse.png" />
-                <meta property="og:url" content="https://ashu.online/blogs/lighthouse-performance-auditing-things-you-should-know" />
+                <meta property="og:image" content="https://ashutosharma.com/lighthouse.png" />
+                <meta property="og:url" content="https://ashutosharma.com/blogs/lighthouse-performance-auditing-things-you-should-know" />
                 <meta property="og:locale" content="en_US" />
                 <meta property="og:type" content="article" />
                 <meta property="article:published_time" content="2020-11-10T19:00:00+00:00" />
@@ -74,15 +74,15 @@ export default function Lighthouse() {
                 <meta name="twitter:creator" content="@iamserverless" />
                 <meta name="twitter:title" content={title} />
                 <meta name="twitter:description" content={description} />
-                <meta name="twitter:image" content="https://ashu.online/lighthouse.png" />
-                <meta property="og:site_name" content="Ashutosh Sharma Blogs | ashu.online" />
+                <meta name="twitter:image" content="https://ashutosharma.com/lighthouse.png" />
+                <meta property="og:site_name" content="Ashutosh Sharma Blogs | ashutosharma.com" />
                 <meta name="twitter:image:alt" content="Lighthouse Performance Report" />
                 <title>{title}</title>
                 <meta name="description" content={description} />
                 <meta name="keywords" content="lighthouse auditing, performance scores, lighthouse report, lighthouse limitations cpu, memory issues, lighthouse-ci server, web.dev, improve performance of web application" />
                 <link rel="icon" href="/favicon.ico" />
                 <meta name="robots" content="index, follow" />
-                <link rel="canonical" href="https://ashu.online/blogs/lighthouse-performance-auditing-things-you-should-know" />
+                <link rel="canonical" href="https://ashutosharma.com/blogs/lighthouse-performance-auditing-things-you-should-know" />
             </Head>
             <BlogTop imgSrc='/lighthouse.png' alt='hero lighthouse score image in background' heading='The Truth of Google Lighthouse Performance' subHeading='Make an informative decision before picking another optimization suggestion'/>
             <BlogContent>

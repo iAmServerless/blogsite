@@ -1,3 +1,3 @@
 User-agent: *
 Disallow: 
-Sitemap: https://ashu.online/sitemap.xml
+Sitemap: https://ashutosharma.com/sitemap.xml

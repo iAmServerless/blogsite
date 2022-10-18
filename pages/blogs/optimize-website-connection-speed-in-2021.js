@@ -25,8 +25,8 @@ export default function Connection() {
                 <meta property="og:type" content="article" />
                 <meta property="article:published_time" content="2021-01-11T19:00:00+00:00" />
                 <meta property="article:modified_time" content="2021-01-11T19:42:15+00:00" />
-                <meta property="og:image" content="https://ashu.online/headoflineblocking.jpg" />
-                <meta property="og:url" content="https://ashu.online/blogs/optimize-website-connection-speed-in-2021" />
+                <meta property="og:image" content="https://ashutosharma.com/headoflineblocking.jpg" />
+                <meta property="og:url" content="https://ashutosharma.com/blogs/optimize-website-connection-speed-in-2021" />
                 <meta name="twitter:label1" content="Written by" />
                 <meta name="twitter:data1" content="Ashutosh Sharma" />
                 <meta name="twitter:label2" content="Est. reading time" />
@@ -36,15 +36,15 @@ export default function Connection() {
                 <meta name="twitter:creator" content="@iamserverless" />
                 <meta name="twitter:title" content={title} />
                 <meta name="twitter:description" content={description} />
-                <meta name="twitter:image" content="https://ashu.online/headoflineblocking.jpg" />
-                <meta property="og:site_name" content="Ashutosh Sharma Blogs | ashu.online" />
+                <meta name="twitter:image" content="https://ashutosharma.com/headoflineblocking.jpg" />
+                <meta property="og:site_name" content="Ashutosh Sharma Blogs | ashutosharma.com" />
                 <meta name="twitter:image:alt" content="Optimize Wesite Connection Speed" />
                 <title>{title}</title>
                 <meta name="description" content={description} />
                 <meta name="keywords" content="HTTP/2, HTTP/3, server push, TLS 1.3, ECC Certificates, Certificate Authority, OSCP Stapling" />
                 <link rel="icon" href="/favicon.ico" />
                 <meta name="robots" content="index, follow" />
-                <link rel="canonical" href="https://ashu.online/blogs/optimize-website-connection-speed-in-2021" />
+                <link rel="canonical" href="https://ashutosharma.com/blogs/optimize-website-connection-speed-in-2021" />
             </Head>
             <BlogTop imgSrc='/headoflineblocking.jpg' alt='http2 vs http3 connection image' heading="How to improve your website connection speed in 2021" subHeading=''/>
             <BlogContent>
