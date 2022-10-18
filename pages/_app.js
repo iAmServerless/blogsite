@@ -3,7 +3,7 @@ import Router from 'next/router'
 import Head from 'next/head'
 import { useEffect } from 'react'
 
-const GA_TRACKING_ID = 'UA-148141583-1'
+const GA_TRACKING_ID = 'G-MG0YH5GJEB'
 const emailJs = 'user_Ui7eii2l7NHZDW3UB8cDD'
 
 // https://developers.google.com/analytics/devguides/collection/gtagjs/pages
@@ -49,9 +49,7 @@ export default function App({ Component, pageProps }) {
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
-            gtag('config', '${GA_TRACKING_ID}', {
-              page_path: window.location.pathname,
-            });
+            gtag('config', '${GA_TRACKING_ID}');
           `,
             }}
           />
