@@ -116,4 +116,11 @@
         align-items: flex-start;
         gap: 1rem;
     }
+
+    .heading {
+        white-space: normal;
+        font-size: 2rem;
+        /* Slightly smaller for mobile */
+        line-height: 1.2;
+    }
 }
