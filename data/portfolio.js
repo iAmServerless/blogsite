@@ -19,7 +19,7 @@ export const portfolioData = {
     email: "mailto:you@ashutosharma.com",
     twitter: "http://twitter.com/iamserverless",
     linkedin: "http://linkedin.com/in/iamserverless",
-    github: "https://github.com/ashutosh"
+    github: "https://github.com/iAmServerless"
   },
   experiences: [
     {
