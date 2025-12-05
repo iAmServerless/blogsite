@@ -1,8 +1,6 @@
-.textColor {
-    color: #422662;
-    -webkit-font-smoothing: antialiased;
+/* Kept for compatibility, but most vars are in global.css */
+.container {
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    min-height: 100vh;
 }
-
-.lightText {
-    color: #999;
-  }

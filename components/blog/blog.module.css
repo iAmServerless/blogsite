@@ -1,60 +1,71 @@
-
-.container {
-    padding: 4rem 1rem;
+.heading {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    text-align: center;
+    background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
-.cards {
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.card {
     display: flex;
-    gap: 2%;
-    flex-wrap: wrap;
-    align-content: space-between;
+    flex-direction: column;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+    height: 100%;
+    padding: 2rem;
+    text-decoration: none;
 }
 
-.blogCard {
-    cursor: pointer;
-    margin: 2rem 0;
+.card:hover {
+    transform: translateY(-5px);
+    border-color: var(--accent-primary);
 }
 
-.headingColor {
-    color: #b091d4;
+.content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
-.blogCard {
-    padding: 1rem;
-    box-shadow: -20px 17px 20px 0px rgb(204 56 138 / 10%);
+.date {
+    font-size: 0.85rem;
+    color: var(--accent-primary);
+    margin-bottom: 1rem;
+    font-weight: 500;
 }
 
-.color {
-    color: #666;
-}
-
-.clickIndication {
-    text-align: right;
-    color: #7700ff;
-}
-
-
-  .heading {
+.title {
     font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--text-primary);
     line-height: 1.3;
-    font-weight: 800;
-    letter-spacing: 2px;
-    margin: 0.1rem 0 0.8rem 0;
-  }
+}
 
-  .gray {
-      color: #333;
-  }
-  
+.description {
+    font-size: 1rem;
+    color: var(--text-secondary);
+    margin-bottom: 2rem;
+    flex: 1;
+    line-height: 1.6;
+}
 
-@media only screen and (min-width: 768px) {
-    .container {
-        padding: 4rem;
-    }
-    .blogCard {
-        padding: 2rem;
-        box-shadow: 0 20px 20px 0 rgb(204 56 138 / 10%);
-    }
-    .blogCardWidth {
-        width: 49%;
-    }
-  }
+.readMore {
+    color: var(--accent-primary);
+    font-weight: 600;
+    font-size: 0.95rem;
+    display: flex;
+    align-items: center;
+    transition: transform 0.2s ease;
+}
+
+.card:hover .readMore {
+    transform: translateX(5px);
+}
