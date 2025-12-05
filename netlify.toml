@@ -4,6 +4,7 @@
 
 [build.environment]
   NODE_VERSION = "18"
+  NODE_OPTIONS = "--openssl-legacy-provider"
 
 [dev]
   command = "yarn dev"
