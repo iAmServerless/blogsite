@@ -1,0 +1,16 @@
+{
+    "apps" : [{
+       "name" : "Ashutosh website",
+       "script" : "yarn start -p 8080"
+    }],
+    "deploy" : {
+      "production" : {
+        "user" : "ec2-user",
+        "host" : ["13.235.113.38"],
+        "ref"  : "origin/master",
+        "repo" : "git@github.com:ashuanindian/blogsite.git",
+        "path" : "/home/ec2-user/ashutosh",
+        "post-deploy" : "cd /home/ec2-user/ashutosh/source && yarn install && yarn build && pm2 startOrRestart process.json --env production"
+       }
+    }
+ }

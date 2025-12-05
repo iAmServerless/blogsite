@@ -1,0 +1,19 @@
+{
+  "name": "ashutosh",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build && next export",
+    "start": "next start -p 8080",
+    "deploy": "pm2 deploy process.json production update"
+  },
+  "dependencies": {
+    "next": "^10.2.0",
+    "pm2": "^4.4.1",
+    "react": "16.13.1",
+    "react-dom": "16.13.1",
+    "react-slick": "^0.27.0",
+    "react-syntax-highlighter": "^13.5.3"
+  }
+}
